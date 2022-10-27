@@ -13,9 +13,7 @@ jobs:
           java-version: 18
       - uses: gradle/wrapper-validation-action@v1
       - run: ./gradlew runScript
-      - uses: peter-evans/create-pull-request@v4
+      - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          branch: update-versions
-          title: Update versions
-          author: github-actions <41898282+github-actions[bot]@users.noreply.github.com>
-          commit-message: Update versions
+            commit_message: Update readme
+            commit_author: github-actions <41898282+github-actions[bot]@users.noreply.github.com>
