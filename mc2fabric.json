@@ -1,0 +1,2689 @@
+{
+    "lastChanged": "2022-10-27T19:27:10+0000",
+    "versions": [
+        {
+            "id": "rd-132211",
+            "normalized": "0.0.0-rd.132211"
+        },
+        {
+            "id": "1.19_deep_dark_experimental_snapshot-1",
+            "normalized": "1.19-Experimental.1"
+        },
+        {
+            "id": "1.18_experimental_snapshot-1",
+            "normalized": "1.18-Experimental.1"
+        },
+        {
+            "id": "1.18_experimental_snapshot-2",
+            "normalized": "1.18-Experimental.2"
+        },
+        {
+            "id": "1.18_experimental_snapshot-3",
+            "normalized": "1.18-Experimental.3"
+        },
+        {
+            "id": "1.18_experimental_snapshot-4",
+            "normalized": "1.18-Experimental.4"
+        },
+        {
+            "id": "1.18_experimental_snapshot-5",
+            "normalized": "1.18-Experimental.5"
+        },
+        {
+            "id": "1.18_experimental_snapshot-6",
+            "normalized": "1.18-Experimental.6"
+        },
+        {
+            "id": "1.18_experimental_snapshot-7",
+            "normalized": "1.18-Experimental.7"
+        },
+        {
+            "id": "1.16_compat-0",
+            "normalized": "1.16.2-beta.3.combat.6"
+        },
+        {
+            "id": "1.16_compat-1",
+            "normalized": "1.16.3-combat.7"
+        },
+        {
+            "id": "1.16_compat-2",
+            "normalized": "1.16.3-combat.7.b"
+        },
+        {
+            "id": "1.16_compat-3",
+            "normalized": "1.16.3-combat.7.c"
+        },
+        {
+            "id": "1.16_compat-4",
+            "normalized": "1.16.3-combat.8"
+        },
+        {
+            "id": "1.16_compat-5",
+            "normalized": "1.16.3-combat.8.b"
+        },
+        {
+            "id": "1.16_compat-6",
+            "normalized": "1.16.3-combat.8.c"
+        },
+        {
+            "id": "rd-132328",
+            "normalized": "0.0.0-rd.132328"
+        },
+        {
+            "id": "rd-20090515",
+            "normalized": "0.0.0-rd.150000"
+        },
+        {
+            "id": "rd-160052",
+            "normalized": "0.0.0-rd.160052"
+        },
+        {
+            "id": "rd-161348",
+            "normalized": "0.0.0-rd.161348"
+        },
+        {
+            "id": "c0.0.11a",
+            "normalized": "0.0.11.a"
+        },
+        {
+            "id": "c0.0.13a_03",
+            "normalized": "0.0.13.a.3"
+        },
+        {
+            "id": "c0.0.13a",
+            "normalized": "0.0.13.a"
+        },
+        {
+            "id": "c0.30_01c",
+            "normalized": "0.30.1.c"
+        },
+        {
+            "id": "inf-20100618",
+            "normalized": "0.31.20100618"
+        },
+        {
+            "id": "a1.0.4",
+            "normalized": "1.0.0-alpha.0.4"
+        },
+        {
+            "id": "a1.0.5_01",
+            "normalized": "1.0.0-alpha.0.5.1"
+        },
+        {
+            "id": "a1.0.11",
+            "normalized": "1.0.0-alpha.0.11"
+        },
+        {
+            "id": "a1.0.14",
+            "normalized": "1.0.0-alpha.0.14"
+        },
+        {
+            "id": "a1.0.15",
+            "normalized": "1.0.0-alpha.0.15"
+        },
+        {
+            "id": "a1.0.16",
+            "normalized": "1.0.0-alpha.0.16"
+        },
+        {
+            "id": "a1.0.17_02",
+            "normalized": "1.0.0-alpha.0.17.2"
+        },
+        {
+            "id": "a1.0.17_04",
+            "normalized": "1.0.0-alpha.0.17.4"
+        },
+        {
+            "id": "a1.1.0",
+            "normalized": "1.0.0-alpha.1.0"
+        },
+        {
+            "id": "a1.1.2",
+            "normalized": "1.0.0-alpha.1.2"
+        },
+        {
+            "id": "a1.1.2_01",
+            "normalized": "1.0.0-alpha.1.2.1"
+        },
+        {
+            "id": "a1.2.0",
+            "normalized": "1.0.0-alpha.2.0"
+        },
+        {
+            "id": "a1.2.0_01",
+            "normalized": "1.0.0-alpha.2.0.1"
+        },
+        {
+            "id": "a1.2.0_02",
+            "normalized": "1.0.0-alpha.2.0.2"
+        },
+        {
+            "id": "a1.2.1",
+            "normalized": "1.0.0-alpha.2.1"
+        },
+        {
+            "id": "a1.2.1_01",
+            "normalized": "1.0.0-alpha.2.1.1"
+        },
+        {
+            "id": "a1.2.2a",
+            "normalized": "1.0.0-alpha.2.2.a"
+        },
+        {
+            "id": "a1.2.2b",
+            "normalized": "1.0.0-alpha.2.2.b"
+        },
+        {
+            "id": "a1.2.3",
+            "normalized": "1.0.0-alpha.2.3"
+        },
+        {
+            "id": "a1.2.3_01",
+            "normalized": "1.0.0-alpha.2.3.1"
+        },
+        {
+            "id": "a1.2.3_02",
+            "normalized": "1.0.0-alpha.2.3.2"
+        },
+        {
+            "id": "a1.2.3_04",
+            "normalized": "1.0.0-alpha.2.3.4"
+        },
+        {
+            "id": "a1.2.4_01",
+            "normalized": "1.0.0-alpha.2.4.1"
+        },
+        {
+            "id": "a1.2.5",
+            "normalized": "1.0.0-alpha.2.5"
+        },
+        {
+            "id": "a1.2.6",
+            "normalized": "1.0.0-alpha.2.6"
+        },
+        {
+            "id": "b1.0",
+            "normalized": "1.0.0-beta.0"
+        },
+        {
+            "id": "b1.0_01",
+            "normalized": "1.0.0-beta.0.1"
+        },
+        {
+            "id": "b1.0.2",
+            "normalized": "1.0.0-beta.0.2"
+        },
+        {
+            "id": "b1.1_01",
+            "normalized": "1.0.0-beta.1.1"
+        },
+        {
+            "id": "b1.1_02",
+            "normalized": "1.0.0-beta.1.2"
+        },
+        {
+            "id": "b1.2",
+            "normalized": "1.0.0-beta.2"
+        },
+        {
+            "id": "b1.2_01",
+            "normalized": "1.0.0-beta.2.1"
+        },
+        {
+            "id": "b1.2_02",
+            "normalized": "1.0.0-beta.2.2"
+        },
+        {
+            "id": "b1.3b",
+            "normalized": "1.0.0-beta.3.b"
+        },
+        {
+            "id": "b1.3_01",
+            "normalized": "1.0.0-beta.3.1"
+        },
+        {
+            "id": "b1.4",
+            "normalized": "1.0.0-beta.4"
+        },
+        {
+            "id": "b1.4_01",
+            "normalized": "1.0.0-beta.4.1"
+        },
+        {
+            "id": "b1.5",
+            "normalized": "1.0.0-beta.5"
+        },
+        {
+            "id": "b1.5_01",
+            "normalized": "1.0.0-beta.5.1"
+        },
+        {
+            "id": "b1.6",
+            "normalized": "1.0.0-beta.6"
+        },
+        {
+            "id": "b1.6.1",
+            "normalized": "1.0.0-beta.6.1"
+        },
+        {
+            "id": "b1.6.2",
+            "normalized": "1.0.0-beta.6.2"
+        },
+        {
+            "id": "b1.6.3",
+            "normalized": "1.0.0-beta.6.3"
+        },
+        {
+            "id": "b1.6.4",
+            "normalized": "1.0.0-beta.6.4"
+        },
+        {
+            "id": "b1.6.5",
+            "normalized": "1.0.0-beta.6.5"
+        },
+        {
+            "id": "b1.6.6",
+            "normalized": "1.0.0-beta.6.6"
+        },
+        {
+            "id": "b1.7",
+            "normalized": "1.0.0-beta.7"
+        },
+        {
+            "id": "b1.7.2",
+            "normalized": "1.0.0-beta.7.2"
+        },
+        {
+            "id": "b1.7.3",
+            "normalized": "1.0.0-beta.7.3"
+        },
+        {
+            "id": "b1.8",
+            "normalized": "1.0.0-beta.8"
+        },
+        {
+            "id": "b1.8.1",
+            "normalized": "1.0.0-beta.8.1"
+        },
+        {
+            "id": "1.0",
+            "normalized": "1.0"
+        },
+        {
+            "id": "1.1",
+            "normalized": "1.1"
+        },
+        {
+            "id": "1.2.1",
+            "normalized": "1.2.1"
+        },
+        {
+            "id": "1.2.2",
+            "normalized": "1.2.2"
+        },
+        {
+            "id": "1.2.3",
+            "normalized": "1.2.3"
+        },
+        {
+            "id": "1.2.4",
+            "normalized": "1.2.4"
+        },
+        {
+            "id": "1.2.5",
+            "normalized": "1.2.5"
+        },
+        {
+            "id": "1.3",
+            "normalized": "1.3"
+        },
+        {
+            "id": "1.3.1",
+            "normalized": "1.3.1"
+        },
+        {
+            "id": "1.3.2",
+            "normalized": "1.3.2"
+        },
+        {
+            "id": "1.4",
+            "normalized": "1.4"
+        },
+        {
+            "id": "1.4.1",
+            "normalized": "1.4.1"
+        },
+        {
+            "id": "1.4.2",
+            "normalized": "1.4.2"
+        },
+        {
+            "id": "1.4.3",
+            "normalized": "1.4.3"
+        },
+        {
+            "id": "1.4.4",
+            "normalized": "1.4.4"
+        },
+        {
+            "id": "1.4.6",
+            "normalized": "1.4.6"
+        },
+        {
+            "id": "1.4.5",
+            "normalized": "1.4.5"
+        },
+        {
+            "id": "1.4.7",
+            "normalized": "1.4.7"
+        },
+        {
+            "id": "1.5",
+            "normalized": "1.5"
+        },
+        {
+            "id": "1.5.1",
+            "normalized": "1.5.1"
+        },
+        {
+            "id": "13w16a",
+            "normalized": "1.6.1-alpha.13.16.a"
+        },
+        {
+            "id": "13w16b",
+            "normalized": "1.6.1-alpha.13.16.b"
+        },
+        {
+            "id": "1.5.2",
+            "normalized": "1.5.2"
+        },
+        {
+            "id": "13w17a",
+            "normalized": "1.6.1-alpha.13.17.a"
+        },
+        {
+            "id": "13w18a",
+            "normalized": "1.6.1-alpha.13.18.a"
+        },
+        {
+            "id": "13w18b",
+            "normalized": "1.6.1-alpha.13.18.b"
+        },
+        {
+            "id": "13w18c",
+            "normalized": "1.6.1-alpha.13.18.c"
+        },
+        {
+            "id": "13w19a",
+            "normalized": "1.6.1-alpha.13.19.a"
+        },
+        {
+            "id": "13w21a",
+            "normalized": "1.6.1-alpha.13.21.a"
+        },
+        {
+            "id": "13w21b",
+            "normalized": "1.6.1-alpha.13.21.b"
+        },
+        {
+            "id": "13w22a",
+            "normalized": "1.6.1-alpha.13.22.a"
+        },
+        {
+            "id": "13w23a",
+            "normalized": "1.6.1-alpha.13.23.a"
+        },
+        {
+            "id": "13w23b",
+            "normalized": "1.6.1-alpha.13.23.b"
+        },
+        {
+            "id": "13w24a",
+            "normalized": "1.6.1-alpha.13.24.a"
+        },
+        {
+            "id": "13w24b",
+            "normalized": "1.6.1-alpha.13.24.b"
+        },
+        {
+            "id": "13w25a",
+            "normalized": "1.6.1-alpha.13.25.a"
+        },
+        {
+            "id": "13w25b",
+            "normalized": "1.6.1-alpha.13.25.b"
+        },
+        {
+            "id": "13w25c",
+            "normalized": "1.6.1-alpha.13.25.c"
+        },
+        {
+            "id": "13w26a",
+            "normalized": "1.6.1-alpha.13.26.a"
+        },
+        {
+            "id": "1.6",
+            "normalized": "1.6"
+        },
+        {
+            "id": "1.6.1",
+            "normalized": "1.6.1"
+        },
+        {
+            "id": "1.6.2",
+            "normalized": "1.6.2"
+        },
+        {
+            "id": "13w36a",
+            "normalized": "1.7.2-alpha.13.36.a"
+        },
+        {
+            "id": "13w36b",
+            "normalized": "1.7.2-alpha.13.36.b"
+        },
+        {
+            "id": "13w37a",
+            "normalized": "1.7.2-alpha.13.37.a"
+        },
+        {
+            "id": "13w37b",
+            "normalized": "1.7.2-alpha.13.37.b"
+        },
+        {
+            "id": "1.6.3",
+            "normalized": "1.6.3"
+        },
+        {
+            "id": "1.6.4",
+            "normalized": "1.6.4"
+        },
+        {
+            "id": "13w38a",
+            "normalized": "1.7.2-alpha.13.38.a"
+        },
+        {
+            "id": "13w38b",
+            "normalized": "1.7.2-alpha.13.38.b"
+        },
+        {
+            "id": "13w38c",
+            "normalized": "1.7.2-alpha.13.38.c"
+        },
+        {
+            "id": "13w39a",
+            "normalized": "1.7.2-alpha.13.39.a"
+        },
+        {
+            "id": "13w39b",
+            "normalized": "1.7.2-alpha.13.39.b"
+        },
+        {
+            "id": "13w41a",
+            "normalized": "1.7.2-alpha.13.41.a"
+        },
+        {
+            "id": "13w41b",
+            "normalized": "1.7.2-alpha.13.41.b"
+        },
+        {
+            "id": "13w42a",
+            "normalized": "1.7.2-alpha.13.42.a"
+        },
+        {
+            "id": "13w42b",
+            "normalized": "1.7.2-alpha.13.42.b"
+        },
+        {
+            "id": "13w43a",
+            "normalized": "1.7.2-alpha.13.43.a"
+        },
+        {
+            "id": "1.7",
+            "normalized": "1.7"
+        },
+        {
+            "id": "1.7.1",
+            "normalized": "1.7.1"
+        },
+        {
+            "id": "1.7.2",
+            "normalized": "1.7.2"
+        },
+        {
+            "id": "13w47a",
+            "normalized": "1.7.4-alpha.13.47.a"
+        },
+        {
+            "id": "13w47b",
+            "normalized": "1.7.4-alpha.13.47.b"
+        },
+        {
+            "id": "13w47c",
+            "normalized": "1.7.4-alpha.13.47.c"
+        },
+        {
+            "id": "13w47d",
+            "normalized": "1.7.4-alpha.13.47.d"
+        },
+        {
+            "id": "13w47e",
+            "normalized": "1.7.4-alpha.13.47.e"
+        },
+        {
+            "id": "13w48a",
+            "normalized": "1.7.4-alpha.13.48.a"
+        },
+        {
+            "id": "13w48b",
+            "normalized": "1.7.4-alpha.13.48.b"
+        },
+        {
+            "id": "13w49a",
+            "normalized": "1.7.4-alpha.13.49.a"
+        },
+        {
+            "id": "1.7.3",
+            "normalized": "1.7.3"
+        },
+        {
+            "id": "1.7.4",
+            "normalized": "1.7.4"
+        },
+        {
+            "id": "14w02a",
+            "normalized": "1.8-alpha.14.2.a"
+        },
+        {
+            "id": "14w02b",
+            "normalized": "1.8-alpha.14.2.b"
+        },
+        {
+            "id": "14w02c",
+            "normalized": "1.8-alpha.14.2.c"
+        },
+        {
+            "id": "14w03a",
+            "normalized": "1.8-alpha.14.3.a"
+        },
+        {
+            "id": "14w03b",
+            "normalized": "1.8-alpha.14.3.b"
+        },
+        {
+            "id": "14w04a",
+            "normalized": "1.8-alpha.14.4.a"
+        },
+        {
+            "id": "14w04b",
+            "normalized": "1.8-alpha.14.4.b"
+        },
+        {
+            "id": "14w05a",
+            "normalized": "1.8-alpha.14.5.a"
+        },
+        {
+            "id": "14w05b",
+            "normalized": "1.8-alpha.14.5.b"
+        },
+        {
+            "id": "14w06a",
+            "normalized": "1.8-alpha.14.6.a"
+        },
+        {
+            "id": "14w06b",
+            "normalized": "1.8-alpha.14.6.b"
+        },
+        {
+            "id": "14w07a",
+            "normalized": "1.8-alpha.14.7.a"
+        },
+        {
+            "id": "1.7.5",
+            "normalized": "1.7.5"
+        },
+        {
+            "id": "14w08a",
+            "normalized": "1.8-alpha.14.8.a"
+        },
+        {
+            "id": "14w10a",
+            "normalized": "1.8-alpha.14.10.a"
+        },
+        {
+            "id": "14w10b",
+            "normalized": "1.8-alpha.14.10.b"
+        },
+        {
+            "id": "14w10c",
+            "normalized": "1.8-alpha.14.10.c"
+        },
+        {
+            "id": "1.7.6-pre1",
+            "normalized": "1.7.6-rc.1"
+        },
+        {
+            "id": "1.7.6-pre2",
+            "normalized": "1.7.6-rc.2"
+        },
+        {
+            "id": "14w11a",
+            "normalized": "1.8-alpha.14.11.a"
+        },
+        {
+            "id": "1.7.6",
+            "normalized": "1.7.6"
+        },
+        {
+            "id": "1.7.7",
+            "normalized": "1.7.7"
+        },
+        {
+            "id": "1.7.8",
+            "normalized": "1.7.8"
+        },
+        {
+            "id": "1.7.9",
+            "normalized": "1.7.9"
+        },
+        {
+            "id": "14w11b",
+            "normalized": "1.8-alpha.14.11.b"
+        },
+        {
+            "id": "14w17a",
+            "normalized": "1.8-alpha.14.17.a"
+        },
+        {
+            "id": "14w18a",
+            "normalized": "1.8-alpha.14.18.a"
+        },
+        {
+            "id": "14w18b",
+            "normalized": "1.8-alpha.14.18.b"
+        },
+        {
+            "id": "14w19a",
+            "normalized": "1.8-alpha.14.19.a"
+        },
+        {
+            "id": "1.7.10-pre1",
+            "normalized": "1.7.10-rc.1"
+        },
+        {
+            "id": "1.7.10-pre2",
+            "normalized": "1.7.10-rc.2"
+        },
+        {
+            "id": "1.7.10-pre3",
+            "normalized": "1.7.10-rc.3"
+        },
+        {
+            "id": "1.7.10-pre4",
+            "normalized": "1.7.10-rc.4"
+        },
+        {
+            "id": "1.7.10",
+            "normalized": "1.7.10"
+        },
+        {
+            "id": "14w20a",
+            "normalized": "1.8-alpha.14.20.a"
+        },
+        {
+            "id": "14w20b",
+            "normalized": "1.8-alpha.14.20.b"
+        },
+        {
+            "id": "14w21a",
+            "normalized": "1.8-alpha.14.21.a"
+        },
+        {
+            "id": "14w21b",
+            "normalized": "1.8-alpha.14.21.b"
+        },
+        {
+            "id": "14w25a",
+            "normalized": "1.8-alpha.14.25.a"
+        },
+        {
+            "id": "14w25b",
+            "normalized": "1.8-alpha.14.25.b"
+        },
+        {
+            "id": "14w26a",
+            "normalized": "1.8-alpha.14.26.a"
+        },
+        {
+            "id": "14w26b",
+            "normalized": "1.8-alpha.14.26.b"
+        },
+        {
+            "id": "14w26c",
+            "normalized": "1.8-alpha.14.26.c"
+        },
+        {
+            "id": "14w27a",
+            "normalized": "1.8-alpha.14.27.a"
+        },
+        {
+            "id": "14w27b",
+            "normalized": "1.8-alpha.14.27.b"
+        },
+        {
+            "id": "14w28a",
+            "normalized": "1.8-alpha.14.28.a"
+        },
+        {
+            "id": "14w28b",
+            "normalized": "1.8-alpha.14.28.b"
+        },
+        {
+            "id": "14w29a",
+            "normalized": "1.8-alpha.14.29.a"
+        },
+        {
+            "id": "14w29b",
+            "normalized": "1.8-alpha.14.29.b"
+        },
+        {
+            "id": "14w30a",
+            "normalized": "1.8-alpha.14.30.a"
+        },
+        {
+            "id": "14w30b",
+            "normalized": "1.8-alpha.14.30.b"
+        },
+        {
+            "id": "14w30c",
+            "normalized": "1.8-alpha.14.30.c"
+        },
+        {
+            "id": "14w31a",
+            "normalized": "1.8-alpha.14.31.a"
+        },
+        {
+            "id": "14w32a",
+            "normalized": "1.8-alpha.14.32.a"
+        },
+        {
+            "id": "14w32b",
+            "normalized": "1.8-alpha.14.32.b"
+        },
+        {
+            "id": "14w32c",
+            "normalized": "1.8-alpha.14.32.c"
+        },
+        {
+            "id": "14w32d",
+            "normalized": "1.8-alpha.14.32.d"
+        },
+        {
+            "id": "14w33a",
+            "normalized": "1.8-alpha.14.33.a"
+        },
+        {
+            "id": "14w33b",
+            "normalized": "1.8-alpha.14.33.b"
+        },
+        {
+            "id": "14w33c",
+            "normalized": "1.8-alpha.14.33.c"
+        },
+        {
+            "id": "14w34a",
+            "normalized": "1.8-alpha.14.34.a"
+        },
+        {
+            "id": "14w34b",
+            "normalized": "1.8-alpha.14.34.b"
+        },
+        {
+            "id": "14w34c",
+            "normalized": "1.8-alpha.14.34.c"
+        },
+        {
+            "id": "14w34d",
+            "normalized": "1.8-alpha.14.34.d"
+        },
+        {
+            "id": "1.8-pre1",
+            "normalized": "1.8-rc.1"
+        },
+        {
+            "id": "1.8-pre2",
+            "normalized": "1.8-rc.2"
+        },
+        {
+            "id": "1.8-pre3",
+            "normalized": "1.8-rc.3"
+        },
+        {
+            "id": "1.8",
+            "normalized": "1.8"
+        },
+        {
+            "id": "1.8.1-pre1",
+            "normalized": "1.8.1-rc.1"
+        },
+        {
+            "id": "1.8.1-pre2",
+            "normalized": "1.8.1-rc.2"
+        },
+        {
+            "id": "1.8.1-pre3",
+            "normalized": "1.8.1-rc.3"
+        },
+        {
+            "id": "1.8.1-pre4",
+            "normalized": "1.8.1-rc.4"
+        },
+        {
+            "id": "1.8.1-pre5",
+            "normalized": "1.8.1-rc.5"
+        },
+        {
+            "id": "1.8.1",
+            "normalized": "1.8.1"
+        },
+        {
+            "id": "1.8.2-pre1",
+            "normalized": "1.8.2-rc.1"
+        },
+        {
+            "id": "1.8.2-pre2",
+            "normalized": "1.8.2-rc.2"
+        },
+        {
+            "id": "1.8.2-pre3",
+            "normalized": "1.8.2-rc.3"
+        },
+        {
+            "id": "1.8.2-pre4",
+            "normalized": "1.8.2-rc.4"
+        },
+        {
+            "id": "1.8.2-pre5",
+            "normalized": "1.8.2-rc.5"
+        },
+        {
+            "id": "1.8.2-pre6",
+            "normalized": "1.8.2-rc.6"
+        },
+        {
+            "id": "1.8.2-pre7",
+            "normalized": "1.8.2-rc.7"
+        },
+        {
+            "id": "1.8.2",
+            "normalized": "1.8.2"
+        },
+        {
+            "id": "1.8.3",
+            "normalized": "1.8.3"
+        },
+        {
+            "id": "15w14a",
+            "normalized": "1.8.4-alpha.15.14.a+loveandhugs"
+        },
+        {
+            "id": "1.8.4",
+            "normalized": "1.8.4"
+        },
+        {
+            "id": "1.8.5",
+            "normalized": "1.8.5"
+        },
+        {
+            "id": "1.8.6",
+            "normalized": "1.8.6"
+        },
+        {
+            "id": "1.8.7",
+            "normalized": "1.8.7"
+        },
+        {
+            "id": "1.8.8",
+            "normalized": "1.8.8"
+        },
+        {
+            "id": "15w31a",
+            "normalized": "1.9-alpha.15.31.a"
+        },
+        {
+            "id": "15w31b",
+            "normalized": "1.9-alpha.15.31.b"
+        },
+        {
+            "id": "15w31c",
+            "normalized": "1.9-alpha.15.31.c"
+        },
+        {
+            "id": "15w32a",
+            "normalized": "1.9-alpha.15.32.a"
+        },
+        {
+            "id": "15w32b",
+            "normalized": "1.9-alpha.15.32.b"
+        },
+        {
+            "id": "15w32c",
+            "normalized": "1.9-alpha.15.32.c"
+        },
+        {
+            "id": "15w33a",
+            "normalized": "1.9-alpha.15.33.a"
+        },
+        {
+            "id": "15w33b",
+            "normalized": "1.9-alpha.15.33.b"
+        },
+        {
+            "id": "15w33c",
+            "normalized": "1.9-alpha.15.33.c"
+        },
+        {
+            "id": "15w34a",
+            "normalized": "1.9-alpha.15.34.a"
+        },
+        {
+            "id": "15w34b",
+            "normalized": "1.9-alpha.15.34.b"
+        },
+        {
+            "id": "15w34c",
+            "normalized": "1.9-alpha.15.34.c"
+        },
+        {
+            "id": "15w34d",
+            "normalized": "1.9-alpha.15.34.d"
+        },
+        {
+            "id": "15w35a",
+            "normalized": "1.9-alpha.15.35.a"
+        },
+        {
+            "id": "15w35b",
+            "normalized": "1.9-alpha.15.35.b"
+        },
+        {
+            "id": "15w35c",
+            "normalized": "1.9-alpha.15.35.c"
+        },
+        {
+            "id": "15w35d",
+            "normalized": "1.9-alpha.15.35.d"
+        },
+        {
+            "id": "15w35e",
+            "normalized": "1.9-alpha.15.35.e"
+        },
+        {
+            "id": "15w36a",
+            "normalized": "1.9-alpha.15.36.a"
+        },
+        {
+            "id": "15w36b",
+            "normalized": "1.9-alpha.15.36.b"
+        },
+        {
+            "id": "15w36c",
+            "normalized": "1.9-alpha.15.36.c"
+        },
+        {
+            "id": "15w36d",
+            "normalized": "1.9-alpha.15.36.d"
+        },
+        {
+            "id": "15w37a",
+            "normalized": "1.9-alpha.15.37.a"
+        },
+        {
+            "id": "15w38a",
+            "normalized": "1.9-alpha.15.38.a"
+        },
+        {
+            "id": "15w38b",
+            "normalized": "1.9-alpha.15.38.b"
+        },
+        {
+            "id": "15w39a",
+            "normalized": "1.9-alpha.15.39.a"
+        },
+        {
+            "id": "15w39b",
+            "normalized": "1.9-alpha.15.39.b"
+        },
+        {
+            "id": "15w39c",
+            "normalized": "1.9-alpha.15.39.c"
+        },
+        {
+            "id": "15w40a",
+            "normalized": "1.9-alpha.15.40.a"
+        },
+        {
+            "id": "15w40b",
+            "normalized": "1.9-alpha.15.40.b"
+        },
+        {
+            "id": "15w41a",
+            "normalized": "1.9-alpha.15.41.a"
+        },
+        {
+            "id": "15w41b",
+            "normalized": "1.9-alpha.15.41.b"
+        },
+        {
+            "id": "15w42a",
+            "normalized": "1.9-alpha.15.42.a"
+        },
+        {
+            "id": "15w43a",
+            "normalized": "1.9-alpha.15.43.a"
+        },
+        {
+            "id": "15w43b",
+            "normalized": "1.9-alpha.15.43.b"
+        },
+        {
+            "id": "15w43c",
+            "normalized": "1.9-alpha.15.43.c"
+        },
+        {
+            "id": "15w44a",
+            "normalized": "1.9-alpha.15.44.a"
+        },
+        {
+            "id": "15w44b",
+            "normalized": "1.9-alpha.15.44.b"
+        },
+        {
+            "id": "15w45a",
+            "normalized": "1.9-alpha.15.45.a"
+        },
+        {
+            "id": "15w46a",
+            "normalized": "1.9-alpha.15.46.a"
+        },
+        {
+            "id": "15w47a",
+            "normalized": "1.9-alpha.15.47.a"
+        },
+        {
+            "id": "15w47b",
+            "normalized": "1.9-alpha.15.47.b"
+        },
+        {
+            "id": "15w47c",
+            "normalized": "1.9-alpha.15.47.c"
+        },
+        {
+            "id": "15w49a",
+            "normalized": "1.9-alpha.15.49.a"
+        },
+        {
+            "id": "1.8.9",
+            "normalized": "1.8.9"
+        },
+        {
+            "id": "15w49b",
+            "normalized": "1.9-alpha.15.49.b"
+        },
+        {
+            "id": "15w50a",
+            "normalized": "1.9-alpha.15.50.a"
+        },
+        {
+            "id": "15w51a",
+            "normalized": "1.9-alpha.15.51.a"
+        },
+        {
+            "id": "15w51b",
+            "normalized": "1.9-alpha.15.51.b"
+        },
+        {
+            "id": "16w02a",
+            "normalized": "1.9-alpha.16.2.a"
+        },
+        {
+            "id": "16w03a",
+            "normalized": "1.9-alpha.16.3.a"
+        },
+        {
+            "id": "16w04a",
+            "normalized": "1.9-alpha.16.4.a"
+        },
+        {
+            "id": "16w05a",
+            "normalized": "1.9-alpha.16.5.a"
+        },
+        {
+            "id": "16w05b",
+            "normalized": "1.9-alpha.16.5.b"
+        },
+        {
+            "id": "16w06a",
+            "normalized": "1.9-alpha.16.6.a"
+        },
+        {
+            "id": "16w07a",
+            "normalized": "1.9-alpha.16.7.a"
+        },
+        {
+            "id": "16w07b",
+            "normalized": "1.9-alpha.16.7.b"
+        },
+        {
+            "id": "1.9-pre1",
+            "normalized": "1.9-rc.1"
+        },
+        {
+            "id": "1.9-pre2",
+            "normalized": "1.9-rc.2"
+        },
+        {
+            "id": "1.9-pre3",
+            "normalized": "1.9-rc.3"
+        },
+        {
+            "id": "1.9-pre4",
+            "normalized": "1.9-rc.4"
+        },
+        {
+            "id": "1.9",
+            "normalized": "1.9"
+        },
+        {
+            "id": "1.9.1-pre1",
+            "normalized": "1.9.1-rc.1"
+        },
+        {
+            "id": "1.9.1-pre2",
+            "normalized": "1.9.1-rc.2"
+        },
+        {
+            "id": "1.9.1-pre3",
+            "normalized": "1.9.1-rc.3"
+        },
+        {
+            "id": "1.9.1",
+            "normalized": "1.9.1"
+        },
+        {
+            "id": "1.9.2",
+            "normalized": "1.9.2"
+        },
+        {
+            "id": "1.RV-Pre1",
+            "normalized": "1.9.2-rv+trendy"
+        },
+        {
+            "id": "16w14a",
+            "normalized": "1.9.3-alpha.16.14.a"
+        },
+        {
+            "id": "16w15a",
+            "normalized": "1.9.3-alpha.16.15.a"
+        },
+        {
+            "id": "16w15b",
+            "normalized": "1.9.3-alpha.16.15.b"
+        },
+        {
+            "id": "1.9.3-pre1",
+            "normalized": "1.9.3-rc.1"
+        },
+        {
+            "id": "1.9.3-pre2",
+            "normalized": "1.9.3-rc.2"
+        },
+        {
+            "id": "1.9.3-pre3",
+            "normalized": "1.9.3-rc.3"
+        },
+        {
+            "id": "1.9.3",
+            "normalized": "1.9.3"
+        },
+        {
+            "id": "1.9.4",
+            "normalized": "1.9.4"
+        },
+        {
+            "id": "16w20a",
+            "normalized": "1.10-alpha.16.20.a"
+        },
+        {
+            "id": "16w21a",
+            "normalized": "1.10-alpha.16.21.a"
+        },
+        {
+            "id": "16w21b",
+            "normalized": "1.10-alpha.16.21.b"
+        },
+        {
+            "id": "1.10-pre1",
+            "normalized": "1.10-rc.1"
+        },
+        {
+            "id": "1.10-pre2",
+            "normalized": "1.10-rc.2"
+        },
+        {
+            "id": "1.10",
+            "normalized": "1.10"
+        },
+        {
+            "id": "1.10.1",
+            "normalized": "1.10.1"
+        },
+        {
+            "id": "1.10.2",
+            "normalized": "1.10.2"
+        },
+        {
+            "id": "16w32a",
+            "normalized": "1.11-alpha.16.32.a"
+        },
+        {
+            "id": "16w32b",
+            "normalized": "1.11-alpha.16.32.b"
+        },
+        {
+            "id": "16w33a",
+            "normalized": "1.11-alpha.16.33.a"
+        },
+        {
+            "id": "16w35a",
+            "normalized": "1.11-alpha.16.35.a"
+        },
+        {
+            "id": "16w36a",
+            "normalized": "1.11-alpha.16.36.a"
+        },
+        {
+            "id": "16w38a",
+            "normalized": "1.11-alpha.16.38.a"
+        },
+        {
+            "id": "16w39a",
+            "normalized": "1.11-alpha.16.39.a"
+        },
+        {
+            "id": "16w39b",
+            "normalized": "1.11-alpha.16.39.b"
+        },
+        {
+            "id": "16w39c",
+            "normalized": "1.11-alpha.16.39.c"
+        },
+        {
+            "id": "16w40a",
+            "normalized": "1.11-alpha.16.40.a"
+        },
+        {
+            "id": "16w41a",
+            "normalized": "1.11-alpha.16.41.a"
+        },
+        {
+            "id": "16w42a",
+            "normalized": "1.11-alpha.16.42.a"
+        },
+        {
+            "id": "16w43a",
+            "normalized": "1.11-alpha.16.43.a"
+        },
+        {
+            "id": "16w44a",
+            "normalized": "1.11-alpha.16.44.a"
+        },
+        {
+            "id": "1.11-pre1",
+            "normalized": "1.11-rc.1"
+        },
+        {
+            "id": "1.11",
+            "normalized": "1.11"
+        },
+        {
+            "id": "16w50a",
+            "normalized": "1.11.1-alpha.16.50.a"
+        },
+        {
+            "id": "1.11.1",
+            "normalized": "1.11.1"
+        },
+        {
+            "id": "1.11.2",
+            "normalized": "1.11.2"
+        },
+        {
+            "id": "17w06a",
+            "normalized": "1.12-alpha.17.6.a"
+        },
+        {
+            "id": "17w13a",
+            "normalized": "1.12-alpha.17.13.a"
+        },
+        {
+            "id": "17w13b",
+            "normalized": "1.12-alpha.17.13.b"
+        },
+        {
+            "id": "17w14a",
+            "normalized": "1.12-alpha.17.14.a"
+        },
+        {
+            "id": "17w15a",
+            "normalized": "1.12-alpha.17.15.a"
+        },
+        {
+            "id": "17w16a",
+            "normalized": "1.12-alpha.17.16.a"
+        },
+        {
+            "id": "17w16b",
+            "normalized": "1.12-alpha.17.16.b"
+        },
+        {
+            "id": "17w17a",
+            "normalized": "1.12-alpha.17.17.a"
+        },
+        {
+            "id": "17w17b",
+            "normalized": "1.12-alpha.17.17.b"
+        },
+        {
+            "id": "17w18a",
+            "normalized": "1.12-alpha.17.18.a"
+        },
+        {
+            "id": "17w18b",
+            "normalized": "1.12-alpha.17.18.b"
+        },
+        {
+            "id": "1.12-pre1",
+            "normalized": "1.12-rc.1"
+        },
+        {
+            "id": "1.12-pre2",
+            "normalized": "1.12-rc.2"
+        },
+        {
+            "id": "1.12-pre3",
+            "normalized": "1.12-rc.3"
+        },
+        {
+            "id": "1.12-pre4",
+            "normalized": "1.12-rc.4"
+        },
+        {
+            "id": "1.12-pre5",
+            "normalized": "1.12-rc.5"
+        },
+        {
+            "id": "1.12-pre6",
+            "normalized": "1.12-rc.6"
+        },
+        {
+            "id": "1.12-pre7",
+            "normalized": "1.12-rc.7"
+        },
+        {
+            "id": "1.12",
+            "normalized": "1.12"
+        },
+        {
+            "id": "17w31a",
+            "normalized": "1.12.1-alpha.17.31.a"
+        },
+        {
+            "id": "1.12.1-pre1",
+            "normalized": "1.12.1-rc.1"
+        },
+        {
+            "id": "1.12.1",
+            "normalized": "1.12.1"
+        },
+        {
+            "id": "1.12.2-pre1",
+            "normalized": "1.12.2-rc.1"
+        },
+        {
+            "id": "1.12.2-pre2",
+            "normalized": "1.12.2-rc.2"
+        },
+        {
+            "id": "1.12.2",
+            "normalized": "1.12.2"
+        },
+        {
+            "id": "17w43a",
+            "normalized": "1.13-alpha.17.43.a"
+        },
+        {
+            "id": "17w43b",
+            "normalized": "1.13-alpha.17.43.b"
+        },
+        {
+            "id": "17w45a",
+            "normalized": "1.13-alpha.17.45.a"
+        },
+        {
+            "id": "17w45b",
+            "normalized": "1.13-alpha.17.45.b"
+        },
+        {
+            "id": "17w46a",
+            "normalized": "1.13-alpha.17.46.a"
+        },
+        {
+            "id": "17w47a",
+            "normalized": "1.13-alpha.17.47.a"
+        },
+        {
+            "id": "17w47b",
+            "normalized": "1.13-alpha.17.47.b"
+        },
+        {
+            "id": "17w48a",
+            "normalized": "1.13-alpha.17.48.a"
+        },
+        {
+            "id": "17w49a",
+            "normalized": "1.13-alpha.17.49.a"
+        },
+        {
+            "id": "17w49b",
+            "normalized": "1.13-alpha.17.49.b"
+        },
+        {
+            "id": "17w50a",
+            "normalized": "1.13-alpha.17.50.a"
+        },
+        {
+            "id": "18w01a",
+            "normalized": "1.13-alpha.18.1.a"
+        },
+        {
+            "id": "18w02a",
+            "normalized": "1.13-alpha.18.2.a"
+        },
+        {
+            "id": "18w03a",
+            "normalized": "1.13-alpha.18.3.a"
+        },
+        {
+            "id": "18w03b",
+            "normalized": "1.13-alpha.18.3.b"
+        },
+        {
+            "id": "18w05a",
+            "normalized": "1.13-alpha.18.5.a"
+        },
+        {
+            "id": "18w06a",
+            "normalized": "1.13-alpha.18.6.a"
+        },
+        {
+            "id": "18w07a",
+            "normalized": "1.13-alpha.18.7.a"
+        },
+        {
+            "id": "18w07b",
+            "normalized": "1.13-alpha.18.7.b"
+        },
+        {
+            "id": "18w07c",
+            "normalized": "1.13-alpha.18.7.c"
+        },
+        {
+            "id": "18w08a",
+            "normalized": "1.13-alpha.18.8.a"
+        },
+        {
+            "id": "18w08b",
+            "normalized": "1.13-alpha.18.8.b"
+        },
+        {
+            "id": "18w09a",
+            "normalized": "1.13-alpha.18.9.a"
+        },
+        {
+            "id": "18w10a",
+            "normalized": "1.13-alpha.18.10.a"
+        },
+        {
+            "id": "18w10b",
+            "normalized": "1.13-alpha.18.10.b"
+        },
+        {
+            "id": "18w10c",
+            "normalized": "1.13-alpha.18.10.c"
+        },
+        {
+            "id": "18w10d",
+            "normalized": "1.13-alpha.18.10.d"
+        },
+        {
+            "id": "18w11a",
+            "normalized": "1.13-alpha.18.11.a"
+        },
+        {
+            "id": "18w14a",
+            "normalized": "1.13-alpha.18.14.a"
+        },
+        {
+            "id": "18w14b",
+            "normalized": "1.13-alpha.18.14.b"
+        },
+        {
+            "id": "18w15a",
+            "normalized": "1.13-alpha.18.15.a"
+        },
+        {
+            "id": "18w16a",
+            "normalized": "1.13-alpha.18.16.a"
+        },
+        {
+            "id": "18w19a",
+            "normalized": "1.13-alpha.18.19.a"
+        },
+        {
+            "id": "18w19b",
+            "normalized": "1.13-alpha.18.19.b"
+        },
+        {
+            "id": "18w20a",
+            "normalized": "1.13-alpha.18.20.a"
+        },
+        {
+            "id": "18w20b",
+            "normalized": "1.13-alpha.18.20.b"
+        },
+        {
+            "id": "18w20c",
+            "normalized": "1.13-alpha.18.20.c"
+        },
+        {
+            "id": "18w21a",
+            "normalized": "1.13-alpha.18.21.a"
+        },
+        {
+            "id": "18w21b",
+            "normalized": "1.13-alpha.18.21.b"
+        },
+        {
+            "id": "18w22a",
+            "normalized": "1.13-alpha.18.22.a"
+        },
+        {
+            "id": "18w22b",
+            "normalized": "1.13-alpha.18.22.b"
+        },
+        {
+            "id": "18w22c",
+            "normalized": "1.13-alpha.18.22.c"
+        },
+        {
+            "id": "1.13-pre1",
+            "normalized": "1.13-rc.1"
+        },
+        {
+            "id": "1.13-pre2",
+            "normalized": "1.13-rc.2"
+        },
+        {
+            "id": "1.13-pre3",
+            "normalized": "1.13-rc.3"
+        },
+        {
+            "id": "1.13-pre4",
+            "normalized": "1.13-rc.4"
+        },
+        {
+            "id": "1.13-pre5",
+            "normalized": "1.13-rc.5"
+        },
+        {
+            "id": "1.13-pre6",
+            "normalized": "1.13-rc.6"
+        },
+        {
+            "id": "1.13-pre7",
+            "normalized": "1.13-rc.7"
+        },
+        {
+            "id": "1.13-pre8",
+            "normalized": "1.13-rc.8"
+        },
+        {
+            "id": "1.13-pre9",
+            "normalized": "1.13-rc.9"
+        },
+        {
+            "id": "1.13-pre10",
+            "normalized": "1.13-rc.10"
+        },
+        {
+            "id": "1.13",
+            "normalized": "1.13"
+        },
+        {
+            "id": "18w30a",
+            "normalized": "1.13.1-alpha.18.30.a"
+        },
+        {
+            "id": "18w30b",
+            "normalized": "1.13.1-alpha.18.30.b"
+        },
+        {
+            "id": "18w31a",
+            "normalized": "1.13.1-alpha.18.31.a"
+        },
+        {
+            "id": "18w32a",
+            "normalized": "1.13.1-alpha.18.32.a"
+        },
+        {
+            "id": "18w33a",
+            "normalized": "1.13.1-alpha.18.33.a"
+        },
+        {
+            "id": "1.13.1-pre1",
+            "normalized": "1.13.1-rc.1"
+        },
+        {
+            "id": "1.13.1-pre2",
+            "normalized": "1.13.1-rc.2"
+        },
+        {
+            "id": "1.13.1",
+            "normalized": "1.13.1"
+        },
+        {
+            "id": "1.13.2-pre1",
+            "normalized": "1.13.2-rc.1"
+        },
+        {
+            "id": "1.13.2-pre2",
+            "normalized": "1.13.2-rc.2"
+        },
+        {
+            "id": "1.13.2",
+            "normalized": "1.13.2"
+        },
+        {
+            "id": "18w43a",
+            "normalized": "1.14-alpha.18.43.a"
+        },
+        {
+            "id": "18w43b",
+            "normalized": "1.14-alpha.18.43.b"
+        },
+        {
+            "id": "18w43c",
+            "normalized": "1.14-alpha.18.43.c"
+        },
+        {
+            "id": "18w44a",
+            "normalized": "1.14-alpha.18.44.a"
+        },
+        {
+            "id": "18w45a",
+            "normalized": "1.14-alpha.18.45.a"
+        },
+        {
+            "id": "18w46a",
+            "normalized": "1.14-alpha.18.46.a"
+        },
+        {
+            "id": "18w47a",
+            "normalized": "1.14-alpha.18.47.a"
+        },
+        {
+            "id": "18w47b",
+            "normalized": "1.14-alpha.18.47.b"
+        },
+        {
+            "id": "18w48a",
+            "normalized": "1.14-alpha.18.48.a"
+        },
+        {
+            "id": "18w48b",
+            "normalized": "1.14-alpha.18.48.b"
+        },
+        {
+            "id": "18w49a",
+            "normalized": "1.14-alpha.18.49.a"
+        },
+        {
+            "id": "18w50a",
+            "normalized": "1.14-alpha.18.50.a"
+        },
+        {
+            "id": "19w02a",
+            "normalized": "1.14-alpha.19.2.a"
+        },
+        {
+            "id": "19w03a",
+            "normalized": "1.14-alpha.19.3.a"
+        },
+        {
+            "id": "19w03b",
+            "normalized": "1.14-alpha.19.3.b"
+        },
+        {
+            "id": "19w03c",
+            "normalized": "1.14-alpha.19.3.c"
+        },
+        {
+            "id": "19w04a",
+            "normalized": "1.14-alpha.19.4.a"
+        },
+        {
+            "id": "19w04b",
+            "normalized": "1.14-alpha.19.4.b"
+        },
+        {
+            "id": "19w05a",
+            "normalized": "1.14-alpha.19.5.a"
+        },
+        {
+            "id": "19w06a",
+            "normalized": "1.14-alpha.19.6.a"
+        },
+        {
+            "id": "19w07a",
+            "normalized": "1.14-alpha.19.7.a"
+        },
+        {
+            "id": "19w08a",
+            "normalized": "1.14-alpha.19.8.a"
+        },
+        {
+            "id": "19w08b",
+            "normalized": "1.14-alpha.19.8.b"
+        },
+        {
+            "id": "19w09a",
+            "normalized": "1.14-alpha.19.9.a"
+        },
+        {
+            "id": "19w11a",
+            "normalized": "1.14-alpha.19.11.a"
+        },
+        {
+            "id": "19w11b",
+            "normalized": "1.14-alpha.19.11.b"
+        },
+        {
+            "id": "19w12a",
+            "normalized": "1.14-alpha.19.12.a"
+        },
+        {
+            "id": "19w12b",
+            "normalized": "1.14-alpha.19.12.b"
+        },
+        {
+            "id": "19w13a",
+            "normalized": "1.14-alpha.19.13.a"
+        },
+        {
+            "id": "19w13b",
+            "normalized": "1.14-alpha.19.13.b"
+        },
+        {
+            "id": "3D Shareware v1.34",
+            "normalized": "1.14-alpha.19.13.shareware"
+        },
+        {
+            "id": "19w14a",
+            "normalized": "1.14-alpha.19.14.a"
+        },
+        {
+            "id": "19w14b",
+            "normalized": "1.14-alpha.19.14.b"
+        },
+        {
+            "id": "1.14 Pre-Release 1",
+            "normalized": "1.14-rc.1"
+        },
+        {
+            "id": "1.14 Pre-Release 2",
+            "normalized": "1.14-rc.2"
+        },
+        {
+            "id": "1.14 Pre-Release 3",
+            "normalized": "1.14-rc.3"
+        },
+        {
+            "id": "1.14 Pre-Release 4",
+            "normalized": "1.14-rc.4"
+        },
+        {
+            "id": "1.14 Pre-Release 5",
+            "normalized": "1.14-rc.5"
+        },
+        {
+            "id": "1.14",
+            "normalized": "1.14"
+        },
+        {
+            "id": "1.14.1 Pre-Release 1",
+            "normalized": "1.14.1-rc.1"
+        },
+        {
+            "id": "1.14.1 Pre-Release 2",
+            "normalized": "1.14.1-rc.2"
+        },
+        {
+            "id": "1.14.1",
+            "normalized": "1.14.1"
+        },
+        {
+            "id": "1.14.2 Pre-Release 1",
+            "normalized": "1.14.2-rc.1"
+        },
+        {
+            "id": "1.14.2 Pre-Release 2",
+            "normalized": "1.14.2-rc.2"
+        },
+        {
+            "id": "1.14.2 Pre-Release 3",
+            "normalized": "1.14.2-rc.3"
+        },
+        {
+            "id": "1.14.2 Pre-Release 4",
+            "normalized": "1.14.2-rc.4"
+        },
+        {
+            "id": "1.14.2",
+            "normalized": "1.14.2"
+        },
+        {
+            "id": "1.14.3-pre1",
+            "normalized": "1.14.3-rc.1"
+        },
+        {
+            "id": "1.14.3-pre2",
+            "normalized": "1.14.3-rc.2"
+        },
+        {
+            "id": "1.14.3-pre3",
+            "normalized": "1.14.3-rc.3"
+        },
+        {
+            "id": "1.14.3-pre4",
+            "normalized": "1.14.3-rc.4"
+        },
+        {
+            "id": "1.14.3",
+            "normalized": "1.14.3"
+        },
+        {
+            "id": "1.14.4-pre1",
+            "normalized": "1.14.4-rc.1"
+        },
+        {
+            "id": "1.14.4-pre2",
+            "normalized": "1.14.4-rc.2"
+        },
+        {
+            "id": "1.14.4-pre3",
+            "normalized": "1.14.4-rc.3"
+        },
+        {
+            "id": "1.14.4-pre4",
+            "normalized": "1.14.4-rc.4"
+        },
+        {
+            "id": "1.14.4-pre5",
+            "normalized": "1.14.4-rc.5"
+        },
+        {
+            "id": "1.14.4-pre6",
+            "normalized": "1.14.4-rc.6"
+        },
+        {
+            "id": "1.14.4-pre7",
+            "normalized": "1.14.4-rc.7"
+        },
+        {
+            "id": "1.14.4",
+            "normalized": "1.14.4"
+        },
+        {
+            "id": "19w34a",
+            "normalized": "1.15-alpha.19.34.a"
+        },
+        {
+            "id": "19w35a",
+            "normalized": "1.15-alpha.19.35.a"
+        },
+        {
+            "id": "19w36a",
+            "normalized": "1.15-alpha.19.36.a"
+        },
+        {
+            "id": "19w37a",
+            "normalized": "1.15-alpha.19.37.a"
+        },
+        {
+            "id": "19w38a",
+            "normalized": "1.15-alpha.19.38.a"
+        },
+        {
+            "id": "19w38b",
+            "normalized": "1.15-alpha.19.38.b"
+        },
+        {
+            "id": "19w39a",
+            "normalized": "1.15-alpha.19.39.a"
+        },
+        {
+            "id": "19w40a",
+            "normalized": "1.15-alpha.19.40.a"
+        },
+        {
+            "id": "19w41a",
+            "normalized": "1.15-alpha.19.41.a"
+        },
+        {
+            "id": "19w42a",
+            "normalized": "1.15-alpha.19.42.a"
+        },
+        {
+            "id": "19w44a",
+            "normalized": "1.15-alpha.19.44.a"
+        },
+        {
+            "id": "19w45a",
+            "normalized": "1.15-alpha.19.45.a"
+        },
+        {
+            "id": "19w45b",
+            "normalized": "1.15-alpha.19.45.b"
+        },
+        {
+            "id": "19w46a",
+            "normalized": "1.15-alpha.19.46.a"
+        },
+        {
+            "id": "19w46b",
+            "normalized": "1.15-alpha.19.46.b"
+        },
+        {
+            "id": "1.15-pre1",
+            "normalized": "1.15-rc.1"
+        },
+        {
+            "id": "1.15-pre2",
+            "normalized": "1.15-rc.2"
+        },
+        {
+            "id": "1.15-pre3",
+            "normalized": "1.15-rc.3"
+        },
+        {
+            "id": "1.15-pre4",
+            "normalized": "1.15-rc.4"
+        },
+        {
+            "id": "1.15-pre5",
+            "normalized": "1.15-rc.5"
+        },
+        {
+            "id": "1.15-pre6",
+            "normalized": "1.15-rc.6"
+        },
+        {
+            "id": "1.15-pre7",
+            "normalized": "1.15-rc.7"
+        },
+        {
+            "id": "1.15",
+            "normalized": "1.15"
+        },
+        {
+            "id": "1.15.1-pre1",
+            "normalized": "1.15.1-rc.1"
+        },
+        {
+            "id": "1.15.1",
+            "normalized": "1.15.1"
+        },
+        {
+            "id": "1.15.2-pre1",
+            "normalized": "1.15.2-rc.1"
+        },
+        {
+            "id": "1.15.2-pre2",
+            "normalized": "1.15.2-rc.2"
+        },
+        {
+            "id": "1.15.2",
+            "normalized": "1.15.2"
+        },
+        {
+            "id": "20w06a",
+            "normalized": "1.16-alpha.20.6.a"
+        },
+        {
+            "id": "20w07a",
+            "normalized": "1.16-alpha.20.7.a"
+        },
+        {
+            "id": "20w08a",
+            "normalized": "1.16-alpha.20.8.a"
+        },
+        {
+            "id": "20w09a",
+            "normalized": "1.16-alpha.20.9.a"
+        },
+        {
+            "id": "20w10a",
+            "normalized": "1.16-alpha.20.10.a"
+        },
+        {
+            "id": "20w11a",
+            "normalized": "1.16-alpha.20.11.a"
+        },
+        {
+            "id": "20w12a",
+            "normalized": "1.16-alpha.20.12.a"
+        },
+        {
+            "id": "20w13a",
+            "normalized": "1.16-alpha.20.13.a"
+        },
+        {
+            "id": "20w13b",
+            "normalized": "1.16-alpha.20.13.b"
+        },
+        {
+            "id": "20w14infinite",
+            "normalized": "1.16-alpha.20.13.inf"
+        },
+        {
+            "id": "20w14a",
+            "normalized": "1.16-alpha.20.14.a"
+        },
+        {
+            "id": "20w15a",
+            "normalized": "1.16-alpha.20.15.a"
+        },
+        {
+            "id": "20w16a",
+            "normalized": "1.16-alpha.20.16.a"
+        },
+        {
+            "id": "20w17a",
+            "normalized": "1.16-alpha.20.17.a"
+        },
+        {
+            "id": "20w18a",
+            "normalized": "1.16-alpha.20.18.a"
+        },
+        {
+            "id": "20w19a",
+            "normalized": "1.16-alpha.20.19.a"
+        },
+        {
+            "id": "20w20a",
+            "normalized": "1.16-alpha.20.20.a"
+        },
+        {
+            "id": "20w20b",
+            "normalized": "1.16-alpha.20.20.b"
+        },
+        {
+            "id": "20w21a",
+            "normalized": "1.16-alpha.20.21.a"
+        },
+        {
+            "id": "20w22a",
+            "normalized": "1.16-alpha.20.22.a"
+        },
+        {
+            "id": "1.16-pre1",
+            "normalized": "1.16-rc.1"
+        },
+        {
+            "id": "1.16-pre2",
+            "normalized": "1.16-rc.2"
+        },
+        {
+            "id": "1.16-pre3",
+            "normalized": "1.16-rc.3"
+        },
+        {
+            "id": "1.16-pre4",
+            "normalized": "1.16-rc.4"
+        },
+        {
+            "id": "1.16-pre5",
+            "normalized": "1.16-rc.5"
+        },
+        {
+            "id": "1.16-pre6",
+            "normalized": "1.16-rc.6"
+        },
+        {
+            "id": "1.16-pre7",
+            "normalized": "1.16-rc.7"
+        },
+        {
+            "id": "1.16-pre8",
+            "normalized": "1.16-rc.8"
+        },
+        {
+            "id": "1.16-rc1",
+            "normalized": "1.16-rc.1"
+        },
+        {
+            "id": "1.16",
+            "normalized": "1.16"
+        },
+        {
+            "id": "1.16.1",
+            "normalized": "1.16.1"
+        },
+        {
+            "id": "20w27a",
+            "normalized": "1.16.2-alpha.20.27.a"
+        },
+        {
+            "id": "20w28a",
+            "normalized": "1.16.2-alpha.20.28.a"
+        },
+        {
+            "id": "20w29a",
+            "normalized": "1.16.2-alpha.20.29.a"
+        },
+        {
+            "id": "20w30a",
+            "normalized": "1.16.2-alpha.20.30.a"
+        },
+        {
+            "id": "1.16.2-pre1",
+            "normalized": "1.16.2-beta.1"
+        },
+        {
+            "id": "1.16.2-pre2",
+            "normalized": "1.16.2-beta.2"
+        },
+        {
+            "id": "1.16.2-pre3",
+            "normalized": "1.16.2-beta.3"
+        },
+        {
+            "id": "1.16.2-rc1",
+            "normalized": "1.16.2-rc.1"
+        },
+        {
+            "id": "1.16.2-rc2",
+            "normalized": "1.16.2-rc.2"
+        },
+        {
+            "id": "1.16.2",
+            "normalized": "1.16.2"
+        },
+        {
+            "id": "1.16.3-rc1",
+            "normalized": "1.16.3-rc.1"
+        },
+        {
+            "id": "1.16.3",
+            "normalized": "1.16.3"
+        },
+        {
+            "id": "1.16.4-pre1",
+            "normalized": "1.16.4-beta.1"
+        },
+        {
+            "id": "1.16.4-pre2",
+            "normalized": "1.16.4-beta.2"
+        },
+        {
+            "id": "1.16.4-rc1",
+            "normalized": "1.16.4-rc.1"
+        },
+        {
+            "id": "1.16.4",
+            "normalized": "1.16.4"
+        },
+        {
+            "id": "20w45a",
+            "normalized": "1.17-alpha.20.45.a"
+        },
+        {
+            "id": "20w46a",
+            "normalized": "1.17-alpha.20.46.a"
+        },
+        {
+            "id": "20w48a",
+            "normalized": "1.17-alpha.20.48.a"
+        },
+        {
+            "id": "20w49a",
+            "normalized": "1.17-alpha.20.49.a"
+        },
+        {
+            "id": "20w51a",
+            "normalized": "1.17-alpha.20.51.a"
+        },
+        {
+            "id": "1.16.5-rc1",
+            "normalized": "1.16.5-rc.1"
+        },
+        {
+            "id": "1.16.5",
+            "normalized": "1.16.5"
+        },
+        {
+            "id": "21w03a",
+            "normalized": "1.17-alpha.21.3.a"
+        },
+        {
+            "id": "21w05a",
+            "normalized": "1.17-alpha.21.5.a"
+        },
+        {
+            "id": "21w05b",
+            "normalized": "1.17-alpha.21.5.b"
+        },
+        {
+            "id": "21w06a",
+            "normalized": "1.17-alpha.21.6.a"
+        },
+        {
+            "id": "21w07a",
+            "normalized": "1.17-alpha.21.7.a"
+        },
+        {
+            "id": "21w08a",
+            "normalized": "1.17-alpha.21.8.a"
+        },
+        {
+            "id": "21w08b",
+            "normalized": "1.17-alpha.21.8.b"
+        },
+        {
+            "id": "21w10a",
+            "normalized": "1.17-alpha.21.10.a"
+        },
+        {
+            "id": "21w11a",
+            "normalized": "1.17-alpha.21.11.a"
+        },
+        {
+            "id": "21w13a",
+            "normalized": "1.17-alpha.21.13.a"
+        },
+        {
+            "id": "21w14a",
+            "normalized": "1.17-alpha.21.14.a"
+        },
+        {
+            "id": "21w15a",
+            "normalized": "1.17-alpha.21.15.a"
+        },
+        {
+            "id": "21w16a",
+            "normalized": "1.17-alpha.21.16.a"
+        },
+        {
+            "id": "21w17a",
+            "normalized": "1.17-alpha.21.17.a"
+        },
+        {
+            "id": "21w18a",
+            "normalized": "1.17-alpha.21.18.a"
+        },
+        {
+            "id": "21w19a",
+            "normalized": "1.17-alpha.21.19.a"
+        },
+        {
+            "id": "21w20a",
+            "normalized": "1.17-alpha.21.20.a"
+        },
+        {
+            "id": "1.17-pre1",
+            "normalized": "1.17-beta.1"
+        },
+        {
+            "id": "1.17-pre2",
+            "normalized": "1.17-beta.2"
+        },
+        {
+            "id": "1.17-pre3",
+            "normalized": "1.17-beta.3"
+        },
+        {
+            "id": "1.17-pre4",
+            "normalized": "1.17-beta.4"
+        },
+        {
+            "id": "1.17-pre5",
+            "normalized": "1.17-beta.5"
+        },
+        {
+            "id": "1.17-rc1",
+            "normalized": "1.17-rc.1"
+        },
+        {
+            "id": "1.17-rc2",
+            "normalized": "1.17-rc.2"
+        },
+        {
+            "id": "1.17",
+            "normalized": "1.17"
+        },
+        {
+            "id": "1.17.1-pre1",
+            "normalized": "1.17.1-beta.1"
+        },
+        {
+            "id": "1.17.1-pre2",
+            "normalized": "1.17.1-beta.2"
+        },
+        {
+            "id": "1.17.1-pre3",
+            "normalized": "1.17.1-beta.3"
+        },
+        {
+            "id": "1.17.1-rc1",
+            "normalized": "1.17.1-rc.1"
+        },
+        {
+            "id": "1.17.1-rc2",
+            "normalized": "1.17.1-rc.2"
+        },
+        {
+            "id": "1.17.1",
+            "normalized": "1.17.1"
+        },
+        {
+            "id": "21w37a",
+            "normalized": "1.18-alpha.21.37.a"
+        },
+        {
+            "id": "21w38a",
+            "normalized": "1.18-alpha.21.38.a"
+        },
+        {
+            "id": "21w39a",
+            "normalized": "1.18-alpha.21.39.a"
+        },
+        {
+            "id": "21w40a",
+            "normalized": "1.18-alpha.21.40.a"
+        },
+        {
+            "id": "21w41a",
+            "normalized": "1.18-alpha.21.41.a"
+        },
+        {
+            "id": "21w42a",
+            "normalized": "1.18-alpha.21.42.a"
+        },
+        {
+            "id": "21w43a",
+            "normalized": "1.18-alpha.21.43.a"
+        },
+        {
+            "id": "21w44a",
+            "normalized": "1.18-alpha.21.44.a"
+        },
+        {
+            "id": "1.18-pre1",
+            "normalized": "1.18-beta.1"
+        },
+        {
+            "id": "1.18-pre2",
+            "normalized": "1.18-beta.2"
+        },
+        {
+            "id": "1.18-pre3",
+            "normalized": "1.18-beta.3"
+        },
+        {
+            "id": "1.18-pre4",
+            "normalized": "1.18-beta.4"
+        },
+        {
+            "id": "1.18-pre5",
+            "normalized": "1.18-beta.5"
+        },
+        {
+            "id": "1.18-pre6",
+            "normalized": "1.18-beta.6"
+        },
+        {
+            "id": "1.18-pre7",
+            "normalized": "1.18-beta.7"
+        },
+        {
+            "id": "1.18-pre8",
+            "normalized": "1.18-beta.8"
+        },
+        {
+            "id": "1.18-rc1",
+            "normalized": "1.18-rc.1"
+        },
+        {
+            "id": "1.18-rc2",
+            "normalized": "1.18-rc.2"
+        },
+        {
+            "id": "1.18-rc3",
+            "normalized": "1.18-rc.3"
+        },
+        {
+            "id": "1.18-rc4",
+            "normalized": "1.18-rc.4"
+        },
+        {
+            "id": "1.18",
+            "normalized": "1.18"
+        },
+        {
+            "id": "1.18.1-pre1",
+            "normalized": "1.18.1-beta.1"
+        },
+        {
+            "id": "1.18.1-rc1",
+            "normalized": "1.18.1-rc.1"
+        },
+        {
+            "id": "1.18.1-rc2",
+            "normalized": "1.18.1-rc.2"
+        },
+        {
+            "id": "1.18.1-rc3",
+            "normalized": "1.18.1-rc.3"
+        },
+        {
+            "id": "1.18.1",
+            "normalized": "1.18.1"
+        },
+        {
+            "id": "22w03a",
+            "normalized": "1.18.2-alpha.22.3.a"
+        },
+        {
+            "id": "22w05a",
+            "normalized": "1.18.2-alpha.22.5.a"
+        },
+        {
+            "id": "22w06a",
+            "normalized": "1.18.2-alpha.22.6.a"
+        },
+        {
+            "id": "22w07a",
+            "normalized": "1.18.2-alpha.22.7.a"
+        },
+        {
+            "id": "1.18.2-pre1",
+            "normalized": "1.18.2-beta.1"
+        },
+        {
+            "id": "1.18.2-pre2",
+            "normalized": "1.18.2-beta.2"
+        },
+        {
+            "id": "1.18.2-pre3",
+            "normalized": "1.18.2-beta.3"
+        },
+        {
+            "id": "1.18.2-rc1",
+            "normalized": "1.18.2-rc.1"
+        },
+        {
+            "id": "1.18.2",
+            "normalized": "1.18.2"
+        },
+        {
+            "id": "22w11a",
+            "normalized": "1.19-alpha.22.11.a"
+        },
+        {
+            "id": "22w12a",
+            "normalized": "1.19-alpha.22.12.a"
+        },
+        {
+            "id": "22w13a",
+            "normalized": "1.19-alpha.22.13.a"
+        },
+        {
+            "id": "22w13oneblockatatime",
+            "normalized": "1.19-22.w.13.oneBlockAtATime"
+        },
+        {
+            "id": "22w14a",
+            "normalized": "1.19-alpha.22.14.a"
+        },
+        {
+            "id": "22w15a",
+            "normalized": "1.19-alpha.22.15.a"
+        },
+        {
+            "id": "22w16a",
+            "normalized": "1.19-alpha.22.16.a"
+        },
+        {
+            "id": "22w16b",
+            "normalized": "1.19-alpha.22.16.b"
+        },
+        {
+            "id": "22w17a",
+            "normalized": "1.19-alpha.22.17.a"
+        },
+        {
+            "id": "22w18a",
+            "normalized": "1.19-alpha.22.18.a"
+        },
+        {
+            "id": "22w19a",
+            "normalized": "1.19-alpha.22.19.a"
+        },
+        {
+            "id": "1.19-pre1",
+            "normalized": "1.19-beta.1"
+        },
+        {
+            "id": "1.19-pre2",
+            "normalized": "1.19-beta.2"
+        },
+        {
+            "id": "1.19-pre3",
+            "normalized": "1.19-beta.3"
+        },
+        {
+            "id": "1.19-pre4",
+            "normalized": "1.19-beta.4"
+        },
+        {
+            "id": "1.19-pre5",
+            "normalized": "1.19-beta.5"
+        },
+        {
+            "id": "1.19-rc1",
+            "normalized": "1.19-rc.1"
+        },
+        {
+            "id": "1.19-rc2",
+            "normalized": "1.19-rc.2"
+        },
+        {
+            "id": "1.19",
+            "normalized": "1.19"
+        },
+        {
+            "id": "22w24a",
+            "normalized": "1.19.1-alpha.22.24.a"
+        },
+        {
+            "id": "1.19.1-pre1",
+            "normalized": "1.19.1-beta.1"
+        },
+        {
+            "id": "1.19.1-rc1",
+            "normalized": "1.19.1-rc.1"
+        },
+        {
+            "id": "1.19.1-pre2",
+            "normalized": "1.19.1-beta.2"
+        },
+        {
+            "id": "1.19.1-pre3",
+            "normalized": "1.19.1-beta.3"
+        },
+        {
+            "id": "1.19.1-pre4",
+            "normalized": "1.19.1-beta.4"
+        },
+        {
+            "id": "1.19.1-pre5",
+            "normalized": "1.19.1-beta.5"
+        },
+        {
+            "id": "1.19.1-pre6",
+            "normalized": "1.19.1-beta.6"
+        },
+        {
+            "id": "1.19.1-rc2",
+            "normalized": "1.19.1-rc.2"
+        },
+        {
+            "id": "1.19.1-rc3",
+            "normalized": "1.19.1-rc.3"
+        },
+        {
+            "id": "1.19.1",
+            "normalized": "1.19.1"
+        },
+        {
+            "id": "1.19.2-rc1",
+            "normalized": "1.19.2-rc.1"
+        },
+        {
+            "id": "1.19.2-rc2",
+            "normalized": "1.19.2-rc.2"
+        },
+        {
+            "id": "1.19.2",
+            "normalized": "1.19.2"
+        },
+        {
+            "id": "22w42a",
+            "normalized": "1.19.3-alpha.22.42.a"
+        },
+        {
+            "id": "22w43a",
+            "normalized": "1.19.3-alpha.22.43.a"
+        }
+    ]
+}

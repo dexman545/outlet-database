@@ -1,0 +1,40 @@
+plugins {
+    id 'groovy'
+}
+
+group 'dex.outlet.database'
+version '1.0-SNAPSHOT'
+
+repositories {
+    maven {
+        name = 'Fabric'
+        url = 'https://maven.fabricmc.net/'
+    }
+    mavenCentral()
+}
+
+dependencies {
+    // Loader and its deps
+    implementation "net.fabricmc:fabric-loader:0.+"
+    def asm_version = 9.3 as String //todo dynamically get loader and deps?
+    implementation "org.ow2.asm:asm:${asm_version}"
+    implementation "org.ow2.asm:asm-analysis:${asm_version}"
+    implementation "org.ow2.asm:asm-commons:${asm_version}"
+    implementation "org.ow2.asm:asm-tree:${asm_version}"
+    implementation "org.ow2.asm:asm-util:${asm_version}"
+
+    implementation 'org.codehaus.groovy:groovy-all:3.0.13'
+
+    implementation 'org.jsoup:jsoup:1.15.3'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+task runScript(dependsOn: 'classes', type: JavaExec) {
+    main = 'Main'
+    classpath = sourceSets.main.runtimeClasspath
+
+    //todo set directory, see if the file will generate there
+}
