@@ -4,4 +4,5 @@ import groovy.transform.ToString
 class McFabric {
     String id
     String normalized
+    Integer javaVersion = 8
 }

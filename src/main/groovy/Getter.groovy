@@ -41,7 +41,7 @@ class Getter {
 
         McMetas.findAll {!presentVersions.contains(it.id) }.asList().reverseEach { m ->
             println 'Getting version for: ' + m.id
-            json.versions.add(new McFabric(id: m.id, normalized: getFabricVersion(m)))
+            json.versions.add(new McFabric(id: m.id, normalized: getFabricVersion(m), javaVersion: getJavaVersion(m)))
             hasChange = true
         }
 
@@ -66,6 +66,26 @@ class Getter {
                 }
             }
         }
+    }
+
+    static def getJavaVersion(McMeta meta) {
+        var launcherJson = new JsonSlurper().parse(new URL(meta.url))
+
+        if (launcherJson instanceof Map) {
+            if (launcherJson.containsKey('javaVersion')) {
+                def jv = launcherJson.javaVersion
+                if (jv instanceof Map) {
+                    if (jv.containsKey('majorVersion')) {
+                        def v = jv.majorVersion
+                        if (v instanceof Integer) {
+                            return (v ?: 8)
+                        }
+                    }
+                }
+            }
+        }
+
+        return 8
     }
 
     static def buildStreamFromWiki(McMeta meta) {
