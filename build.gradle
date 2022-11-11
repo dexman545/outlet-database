@@ -17,6 +17,7 @@ dependencies {
     // Loader and its deps
     implementation "net.fabricmc:fabric-loader:0.+" // Initially 0.14.10
     def asm_version = 9.3 as String //todo dynamically get loader and deps?
+    // https://github.com/FabricMC/fabric-meta#v2versionsloadergame_versionloader_version
     implementation "org.ow2.asm:asm:${asm_version}"
     implementation "org.ow2.asm:asm-analysis:${asm_version}"
     implementation "org.ow2.asm:asm-commons:${asm_version}"
@@ -33,7 +34,7 @@ test {
 }
 
 task runScript(dependsOn: 'classes', type: JavaExec) {
-    main = 'Main'
+    main = 'dex.outlet.database.Main'
     classpath = sourceSets.main.runtimeClasspath
 
     //todo set directory, see if the file will generate there

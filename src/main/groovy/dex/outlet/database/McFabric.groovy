@@ -1,3 +1,5 @@
+package dex.outlet.database
+
 import groovy.transform.ToString
 
 @ToString

@@ -1,3 +1,5 @@
+package dex.outlet.database
+
 import groovy.json.JsonOutput
 import groovy.json.JsonParserType
 import groovy.json.JsonSlurper
