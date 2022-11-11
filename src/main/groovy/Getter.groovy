@@ -47,7 +47,7 @@ class Getter {
 
         if (hasChange) json.lastChanged = Date.from(ZonedDateTime.now().toOffsetDateTime().truncatedTo(ChronoUnit.SECONDS).toInstant())
 
-        f.write(JsonOutput.prettyPrint(JsonOutput.toJson(json)))
+        f.write(JsonOutput.prettyPrint(JsonOutput.toJson(json)).normalize())
     }
 
     static def getFabricVersion(McMeta meta) {
