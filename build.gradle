@@ -15,7 +15,7 @@ repositories {
 
 dependencies {
     // Loader and its deps
-    implementation "net.fabricmc:fabric-loader:0.+"
+    implementation "net.fabricmc:fabric-loader:0.+" // Initially 0.14.10
     def asm_version = 9.3 as String //todo dynamically get loader and deps?
     implementation "org.ow2.asm:asm:${asm_version}"
     implementation "org.ow2.asm:asm-analysis:${asm_version}"
