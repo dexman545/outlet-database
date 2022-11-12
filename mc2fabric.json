@@ -1,5 +1,5 @@
 {
-    "lastChanged": "2022-11-09T15:13:49+0000",
+    "lastChanged": "2022-11-12T04:36:07+0000",
     "versions": [
         {
             "id": "rd-132211",
@@ -47,38 +47,63 @@
             "javaVersion": 16
         },
         {
-            "id": "1.16_compat-0",
+            "id": "1.16_combat-0",
             "normalized": "1.16.2-beta.3.combat.6",
             "javaVersion": 8
         },
         {
-            "id": "1.16_compat-1",
+            "id": "1.16_combat-1",
             "normalized": "1.16.3-combat.7",
             "javaVersion": 8
         },
         {
-            "id": "1.16_compat-2",
+            "id": "1.16_combat-2",
             "normalized": "1.16.3-combat.7.b",
             "javaVersion": 8
         },
         {
-            "id": "1.16_compat-3",
+            "id": "1.16_combat-3",
             "normalized": "1.16.3-combat.7.c",
             "javaVersion": 8
         },
         {
-            "id": "1.16_compat-4",
-            "normalized": "1.16.3-combat.8",
+            "id": "1.16_combat-4",
+            "normalized": "1.16.2-Combat.Test.8",
             "javaVersion": 8
         },
         {
-            "id": "1.16_compat-5",
+            "id": "1.16_combat-5",
             "normalized": "1.16.3-combat.8.b",
             "javaVersion": 8
         },
         {
-            "id": "1.16_compat-6",
+            "id": "1.16_combat-6",
             "normalized": "1.16.3-combat.8.c",
+            "javaVersion": 8
+        },
+        {
+            "id": "1.14_combat-212796",
+            "normalized": "1.14.3-rc.4.combat.1",
+            "javaVersion": 8
+        },
+        {
+            "id": "1.14_combat-0",
+            "normalized": "1.14.5-combat.2",
+            "javaVersion": 8
+        },
+        {
+            "id": "1.14_combat-3",
+            "normalized": "1.14.5-combat.3",
+            "javaVersion": 8
+        },
+        {
+            "id": "1.15_combat-1",
+            "normalized": "1.15-rc.3.combat.4",
+            "javaVersion": 8
+        },
+        {
+            "id": "1.15_combat-6",
+            "normalized": "1.15.2-rc.2.combat.5",
             "javaVersion": 8
         },
         {
@@ -2723,7 +2748,7 @@
         },
         {
             "id": "1.16-rc1",
-            "normalized": "1.16-rc.1",
+            "normalized": "1.16-rc.9",
             "javaVersion": 8
         },
         {
