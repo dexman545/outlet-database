@@ -1,5 +1,9 @@
 package dex.outlet.database
 
+import dex.outlet.database.metas.JsonFormat
+import dex.outlet.database.metas.McFabric
+import dex.outlet.database.metas.McMeta
+import dex.outlet.database.metas.ReleaseType
 import groovy.json.JsonOutput
 import groovy.json.JsonParserType
 import groovy.json.JsonSlurper
@@ -43,7 +47,7 @@ class Getter {
 
         McMetas.findAll {!presentVersions.contains(it.id) }.asList().reverseEach { m ->
             println 'Getting version for: ' + m.id
-            json.versions.add(new McFabric(id: m.id, normalized: getFabricVersion(m), javaVersion: getJavaVersion(m)))
+            json.versions.add(new McFabric(id: m.id, normalized: getFabricVersion(m), javaVersion: getJavaVersion(m), type: m.type))
             hasChange = true
         }
 
@@ -59,6 +63,7 @@ class Getter {
         def converter = McVersionLookup.getDeclaredMethod("fromVersionJson", InputStream.class, McVersion.Builder.class)
         var maybe = ReflectionUtils.makeAccessible(converter)
 
+        //todo add file fallback
         def stream = buildStreamFromWiki(meta)
         if (stream != null) {
             if (maybe.isPresent()) {
@@ -125,14 +130,14 @@ class Getter {
                 if (v.containsKey('releaseTime')) {
                     def date = ZonedDateTime.parse(v.releaseTime as String, DateTimeFormatter.ISO_OFFSET_DATE_TIME)
                     if (date > LAST_TIME) {
-                        if (v.containsKey("id") && v.containsKey("url")) {
-                            McMetas.add(new McMeta(id: v.id, url: v.url))
+                        if (v.containsKey("id") && v.containsKey("url") && v.containsKey("type")) {
+                            McMetas.add(new McMeta(id: v.id, url: v.url, type: (v.type as String).toUpperCase() as ReleaseType))
                         } else {
-                            throw new IllegalStateException("Json format changed!")
+                            throw new IllegalStateException("MC Launcher Json format changed!")
                         }
                     }
                 } else {
-                    throw new IllegalStateException("Json format changed!")
+                    throw new IllegalStateException("MC Launcher Json format changed the time!")
                 }
             }
         }

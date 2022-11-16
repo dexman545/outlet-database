@@ -1,4 +1,4 @@
-package dex.outlet.database
+package dex.outlet.database.metas
 
 import groovy.transform.ToString
 
