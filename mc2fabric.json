@@ -4082,8 +4082,8 @@
             "javaVersion": 17
         },
         {
-            "type": "SNAPSHOT",
             "id": "1.19.3-pre2",
+            "type": "SNAPSHOT",
             "normalized": "1.19.3-beta.2",
             "javaVersion": 17
         }
