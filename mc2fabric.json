@@ -4088,8 +4088,8 @@
             "javaVersion": 17
         },
         {
-            "type": "SNAPSHOT",
             "id": "1.19.3-pre3",
+            "type": "SNAPSHOT",
             "normalized": "1.19.3-beta.3",
             "javaVersion": 17
         }
