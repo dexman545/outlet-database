@@ -4100,14 +4100,14 @@
             "javaVersion": 17
         },
         {
-            "type": "SNAPSHOT",
             "id": "1.19.3-rc2",
+            "type": "SNAPSHOT",
             "normalized": "1.19.3-rc.2",
             "javaVersion": 17
         },
         {
-            "type": "SNAPSHOT",
             "id": "1.19.3-rc3",
+            "type": "SNAPSHOT",
             "normalized": "1.19.3-rc.3",
             "javaVersion": 17
         }
