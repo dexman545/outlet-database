@@ -4112,8 +4112,8 @@
             "javaVersion": 17
         },
         {
-            "type": "RELEASE",
             "id": "1.19.3",
+            "type": "RELEASE",
             "normalized": "1.19.3",
             "javaVersion": 17
         }
