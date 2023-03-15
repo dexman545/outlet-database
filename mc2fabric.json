@@ -1,5 +1,5 @@
 {
-    "lastChanged": "2023-03-14T15:14:18+0000",
+    "lastChanged": "2023-03-15T15:11:40+0000",
     "versions": [
         {
             "id": "rd-132211",
@@ -4172,21 +4172,27 @@
             "javaVersion": 17
         },
         {
-            "type": "SNAPSHOT",
             "id": "1.19.4-rc1",
+            "type": "SNAPSHOT",
             "normalized": "1.19.4-rc.1",
             "javaVersion": 17
         },
         {
-            "type": "SNAPSHOT",
             "id": "1.19.4-rc2",
+            "type": "SNAPSHOT",
             "normalized": "1.19.4-rc.2",
             "javaVersion": 17
         },
         {
-            "type": "SNAPSHOT",
             "id": "1.19.4-rc3",
+            "type": "SNAPSHOT",
             "normalized": "1.19.4-rc.3",
+            "javaVersion": 17
+        },
+        {
+            "type": "RELEASE",
+            "id": "1.19.4",
+            "normalized": "1.19.4",
             "javaVersion": 17
         }
     ]
