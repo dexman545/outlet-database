@@ -4238,8 +4238,8 @@
             "javaVersion": 17
         },
         {
-            "type": "SNAPSHOT",
             "id": "1.20-pre1",
+            "type": "SNAPSHOT",
             "normalized": "1.20-beta.1",
             "javaVersion": 17
         }
