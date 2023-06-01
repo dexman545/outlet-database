@@ -4280,8 +4280,8 @@
             "javaVersion": 17
         },
         {
-            "type": "SNAPSHOT",
             "id": "1.20-rc1",
+            "type": "SNAPSHOT",
             "normalized": "1.20-rc.1",
             "javaVersion": 17
         }
