@@ -4306,7 +4306,7 @@
         {
             "id": "23w31a",
             "type": "SNAPSHOT",
-            "normalized": "1.20-alpha.23.31.a",
+            "normalized": "1.20.2-alpha.23.31.a",
             "javaVersion": 17
         }
     ]
