@@ -4310,8 +4310,8 @@
             "javaVersion": 17
         },
         {
-            "type": "SNAPSHOT",
             "id": "23w32a",
+            "type": "SNAPSHOT",
             "normalized": "1.20.2-alpha.23.32.a",
             "javaVersion": 17
         }
