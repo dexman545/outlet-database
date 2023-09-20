@@ -4352,14 +4352,14 @@
             "javaVersion": 17
         },
         {
-            "type": "SNAPSHOT",
             "id": "1.20.2-rc1",
+            "type": "SNAPSHOT",
             "normalized": "1.20.2-rc.1",
             "javaVersion": 17
         },
         {
-            "type": "SNAPSHOT",
             "id": "1.20.2-rc2",
+            "type": "SNAPSHOT",
             "normalized": "1.20.2-rc.2",
             "javaVersion": 17
         }
