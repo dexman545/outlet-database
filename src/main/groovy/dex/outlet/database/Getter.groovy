@@ -24,9 +24,8 @@ import java.util.regex.Pattern
 class Getter {
     final static def MC_META_URL = 'https://piston-meta.mojang.com/mc/game/version_manifest_v2.json'
     final static def McMetas = new LinkedHashSet<McMeta>()
-    final static def VERSION_REGEX = Pattern.compile("Snapshot for (.+)")
-    final static def LAST_TIME = ZonedDateTime.parse('2022-08-05T11:57:05+00:00', DateTimeFormatter.ISO_OFFSET_DATE_TIME)
     final static def VERSION_REGEX = Pattern.compile("(?:(?:Snapshot)|(?:Pre-release)|(?:Release candidate)) for (.+)")
+    final static def LAST_TIME = ZonedDateTime.parse('2012-08-05T11:57:05+00:00', DateTimeFormatter.ISO_OFFSET_DATE_TIME)
 
     //todo missing combat tests and some older versions may not be accurate
     static def update() {
