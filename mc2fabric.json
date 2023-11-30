@@ -4436,8 +4436,8 @@
             "javaVersion": 17
         },
         {
-            "type": "SNAPSHOT",
             "id": "1.20.3-pre4",
+            "type": "SNAPSHOT",
             "normalized": "1.20.3-beta.4",
             "javaVersion": 17
         }
