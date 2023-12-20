@@ -4466,14 +4466,14 @@
             "javaVersion": 17
         },
         {
-            "type": "SNAPSHOT",
             "id": "23w51a",
+            "type": "SNAPSHOT",
             "normalized": "1.20.5-alpha.23.51.a",
             "javaVersion": 17
         },
         {
-            "type": "SNAPSHOT",
             "id": "23w51b",
+            "type": "SNAPSHOT",
             "normalized": "1.20.5-alpha.23.51.b",
             "javaVersion": 17
         }
