@@ -4480,7 +4480,7 @@
         {
             "type": "SNAPSHOT",
             "id": "24w03a",
-            "normalized": "24.w.3.a",
+            "normalized": "1.20.5-alpha.24.3.a",
             "javaVersion": 17
         }
     ]
