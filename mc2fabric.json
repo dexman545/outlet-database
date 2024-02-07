@@ -4502,8 +4502,8 @@
             "javaVersion": 17
         },
         {
-            "type": "SNAPSHOT",
             "id": "24w05b",
+            "type": "SNAPSHOT",
             "normalized": "1.20.5-alpha.24.5.b",
             "javaVersion": 17
         }
