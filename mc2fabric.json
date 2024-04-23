@@ -4592,20 +4592,20 @@
             "javaVersion": 21
         },
         {
-            "type": "SNAPSHOT",
             "id": "1.20.5-rc2",
+            "type": "SNAPSHOT",
             "normalized": "1.20.5-rc.2",
             "javaVersion": 21
         },
         {
-            "type": "SNAPSHOT",
             "id": "1.20.5-rc3",
+            "type": "SNAPSHOT",
             "normalized": "1.20.5-rc.3",
             "javaVersion": 21
         },
         {
-            "type": "RELEASE",
             "id": "1.20.5",
+            "type": "RELEASE",
             "normalized": "1.20.5",
             "javaVersion": 21
         }
