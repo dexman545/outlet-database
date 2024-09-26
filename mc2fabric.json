@@ -4742,8 +4742,8 @@
             "javaVersion": 21
         },
         {
-            "type": "SNAPSHOT",
             "id": "24w39a",
+            "type": "SNAPSHOT",
             "normalized": "1.21.2-alpha.24.39.a",
             "javaVersion": 21
         }
