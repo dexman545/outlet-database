@@ -1,5 +1,5 @@
 {
-    "lastChanged": "2024-10-10T15:13:54+0000",
+    "lastChanged": "2024-10-15T15:14:00+0000",
     "versions": [
         {
             "id": "rd-132211",
@@ -4760,9 +4760,21 @@
             "javaVersion": 21
         },
         {
-            "type": "SNAPSHOT",
             "id": "1.21.2-pre2",
+            "type": "SNAPSHOT",
             "normalized": "1.21.2-beta.2",
+            "javaVersion": 21
+        },
+        {
+            "type": "SNAPSHOT",
+            "id": "1.21.2-pre3",
+            "normalized": "1.21.2-beta.3",
+            "javaVersion": 21
+        },
+        {
+            "type": "SNAPSHOT",
+            "id": "1.21.2-pre4",
+            "normalized": "1.21.2-beta.4",
             "javaVersion": 21
         }
     ]
