@@ -4862,8 +4862,8 @@
             "javaVersion": 21
         },
         {
-            "type": "RELEASE",
             "id": "1.21.4",
+            "type": "RELEASE",
             "normalized": "1.21.4",
             "javaVersion": 21
         }
