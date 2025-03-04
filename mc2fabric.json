@@ -4916,8 +4916,8 @@
             "javaVersion": 21
         },
         {
-            "type": "SNAPSHOT",
             "id": "25w09b",
+            "type": "SNAPSHOT",
             "normalized": "1.21.5-alpha.25.9.b",
             "javaVersion": 21
         }
