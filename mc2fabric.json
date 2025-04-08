@@ -1,5 +1,5 @@
 {
-    "lastChanged": "2025-04-01T18:01:31+0000",
+    "lastChanged": "2025-04-08T14:15:00+0000",
     "versions": [
         {
             "id": "rd-132211",
@@ -4967,6 +4967,12 @@
             "id": "25w14craftmine",
             "type": "SNAPSHOT",
             "normalized": "1.21.6-alpha.25.14.craftmine",
+            "javaVersion": 21
+        },
+        {
+            "type": "SNAPSHOT",
+            "id": "25w15a",
+            "normalized": "1.21.5-alpha.25.15.a",
             "javaVersion": 21
         }
     ]
