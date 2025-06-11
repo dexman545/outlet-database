@@ -5030,8 +5030,8 @@
             "javaVersion": 21
         },
         {
-            "type": "SNAPSHOT",
             "id": "1.21.6-pre4",
+            "type": "SNAPSHOT",
             "normalized": "1.21.6-beta.4",
             "javaVersion": 21
         }
