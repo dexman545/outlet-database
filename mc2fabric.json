@@ -5066,8 +5066,8 @@
             "javaVersion": 21
         },
         {
-            "type": "SNAPSHOT",
             "id": "1.21.8-rc1",
+            "type": "SNAPSHOT",
             "normalized": "1.21.8-rc.1",
             "javaVersion": 21
         }
