@@ -5080,7 +5080,7 @@
         {
             "type": "SNAPSHOT",
             "id": "25w31a",
-            "normalized": "1.21.6-alpha.25.31.a",
+            "normalized": "1.21.9-alpha.25.31.a",
             "javaVersion": 21
         }
     ]
