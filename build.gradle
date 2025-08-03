@@ -44,5 +44,7 @@ tasks.register('runScript', JavaExec) {
     mainClass = 'dex.outlet.database.Main'
     classpath = sourceSets.main.runtimeClasspath
 
+    //args("updateOld")
+
     //todo set directory, see if the file will generate there
 }
