@@ -2,8 +2,8 @@ plugins {
     id 'groovy'
 }
 
-group 'dex.outlet.database'
-version '1.0-SNAPSHOT'
+group = 'dex.outlet.database'
+version = '1.0-SNAPSHOT'
 
 repositories {
     maven {
@@ -13,10 +13,16 @@ repositories {
     mavenCentral()
 }
 
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
 dependencies {
     // Loader and its deps
     implementation "net.fabricmc:fabric-loader:0.+" // Initially 0.14.10
-    def asm_version = 9.3 as String //todo dynamically get loader and deps?
+    def asm_version = 9.8 as String //todo dynamically get loader and deps?
     // https://github.com/FabricMC/fabric-meta#v2versionsloadergame_versionloader_version
     implementation "org.ow2.asm:asm:${asm_version}"
     implementation "org.ow2.asm:asm-analysis:${asm_version}"
@@ -33,8 +39,9 @@ test {
     useJUnitPlatform()
 }
 
-task runScript(dependsOn: 'classes', type: JavaExec) {
-    main = 'dex.outlet.database.Main'
+tasks.register('runScript', JavaExec) {
+    dependsOn 'classes'
+    mainClass = 'dex.outlet.database.Main'
     classpath = sourceSets.main.runtimeClasspath
 
     //todo set directory, see if the file will generate there
