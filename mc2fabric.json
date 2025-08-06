@@ -1,5 +1,5 @@
 {
-    "lastChanged": "2025-08-05T15:19:44+0000",
+    "lastChanged": "2025-08-06T18:41:33+0000",
     "versions": [
         {
             "id": "rd-132211",
@@ -14,43 +14,43 @@
             "javaVersion": 17
         },
         {
-            "id": "1.18_experimental_snapshot-1",
+            "id": "1.18_experimental-snapshot-1",
             "type": "EXPERIMENT",
             "normalized": "1.18-Experimental.1",
             "javaVersion": 16
         },
         {
-            "id": "1.18_experimental_snapshot-2",
+            "id": "1.18_experimental-snapshot-2",
             "type": "EXPERIMENT",
             "normalized": "1.18-Experimental.2",
             "javaVersion": 16
         },
         {
-            "id": "1.18_experimental_snapshot-3",
+            "id": "1.18_experimental-snapshot-3",
             "type": "EXPERIMENT",
             "normalized": "1.18-Experimental.3",
             "javaVersion": 16
         },
         {
-            "id": "1.18_experimental_snapshot-4",
+            "id": "1.18_experimental-snapshot-4",
             "type": "EXPERIMENT",
             "normalized": "1.18-Experimental.4",
             "javaVersion": 16
         },
         {
-            "id": "1.18_experimental_snapshot-5",
+            "id": "1.18_experimental-snapshot-5",
             "type": "EXPERIMENT",
             "normalized": "1.18-Experimental.5",
             "javaVersion": 16
         },
         {
-            "id": "1.18_experimental_snapshot-6",
+            "id": "1.18_experimental-snapshot-6",
             "type": "EXPERIMENT",
             "normalized": "1.18-Experimental.6",
             "javaVersion": 16
         },
         {
-            "id": "1.18_experimental_snapshot-7",
+            "id": "1.18_experimental-snapshot-7",
             "type": "EXPERIMENT",
             "normalized": "1.18-Experimental.7",
             "javaVersion": 16
@@ -82,7 +82,7 @@
         {
             "id": "1.16_combat-4",
             "type": "EXPERIMENT",
-            "normalized": "1.16.2-Combat.Test.8",
+            "normalized": "1.16.3-combat.8",
             "javaVersion": 8
         },
         {
@@ -154,25 +154,25 @@
         {
             "id": "c0.0.11a",
             "type": "OLD_ALPHA",
-            "normalized": "0.0.11.a",
+            "normalized": "0.11",
             "javaVersion": 8
         },
         {
             "id": "c0.0.13a_03",
             "type": "OLD_ALPHA",
-            "normalized": "0.0.13.a.3",
+            "normalized": "0.13.3",
             "javaVersion": 8
         },
         {
             "id": "c0.0.13a",
             "type": "OLD_ALPHA",
-            "normalized": "0.0.13.a",
+            "normalized": "0.13",
             "javaVersion": 8
         },
         {
             "id": "c0.30_01c",
             "type": "OLD_ALPHA",
-            "normalized": "0.30.1.c",
+            "normalized": "0.30.1-c",
             "javaVersion": 8
         },
         {
@@ -382,7 +382,7 @@
         {
             "id": "b1.3b",
             "type": "OLD_BETA",
-            "normalized": "1.0.0-beta.3.b",
+            "normalized": "1.0.0-beta.3.0.b",
             "javaVersion": 8
         },
         {
@@ -418,7 +418,7 @@
         {
             "id": "b1.6",
             "type": "OLD_BETA",
-            "normalized": "1.0.0-beta.6",
+            "normalized": "1.0.0-beta.6.0.r",
             "javaVersion": 8
         },
         {
@@ -478,7 +478,7 @@
         {
             "id": "b1.8",
             "type": "OLD_BETA",
-            "normalized": "1.0.0-beta.8",
+            "normalized": "1.0.0-beta.8.0.r",
             "javaVersion": 8
         },
         {
@@ -610,13 +610,13 @@
         {
             "id": "13w16a",
             "type": "SNAPSHOT",
-            "normalized": "1.6.1-alpha.13.16.a",
+            "normalized": "1.6-alpha.13.16.a",
             "javaVersion": 8
         },
         {
             "id": "13w16b",
             "type": "SNAPSHOT",
-            "normalized": "1.6.1-alpha.13.16.b",
+            "normalized": "1.6-alpha.13.16.b",
             "javaVersion": 8
         },
         {
@@ -628,97 +628,97 @@
         {
             "id": "13w17a",
             "type": "SNAPSHOT",
-            "normalized": "1.6.1-alpha.13.17.a",
+            "normalized": "1.6-alpha.13.17.a",
             "javaVersion": 8
         },
         {
             "id": "13w18a",
             "type": "SNAPSHOT",
-            "normalized": "1.6.1-alpha.13.18.a",
+            "normalized": "1.6-alpha.13.18.a",
             "javaVersion": 8
         },
         {
             "id": "13w18b",
             "type": "SNAPSHOT",
-            "normalized": "1.6.1-alpha.13.18.b",
+            "normalized": "1.6-alpha.13.18.b",
             "javaVersion": 8
         },
         {
             "id": "13w18c",
             "type": "SNAPSHOT",
-            "normalized": "1.6.1-alpha.13.18.c",
+            "normalized": "1.6-alpha.13.18.c",
             "javaVersion": 8
         },
         {
             "id": "13w19a",
             "type": "SNAPSHOT",
-            "normalized": "1.6.1-alpha.13.19.a",
+            "normalized": "1.6-alpha.13.19.a",
             "javaVersion": 8
         },
         {
             "id": "13w21a",
             "type": "SNAPSHOT",
-            "normalized": "1.6.1-alpha.13.21.a",
+            "normalized": "1.6-alpha.13.21.a",
             "javaVersion": 8
         },
         {
             "id": "13w21b",
             "type": "SNAPSHOT",
-            "normalized": "1.6.1-alpha.13.21.b",
+            "normalized": "1.6-alpha.13.21.b",
             "javaVersion": 8
         },
         {
             "id": "13w22a",
             "type": "SNAPSHOT",
-            "normalized": "1.6.1-alpha.13.22.a",
+            "normalized": "1.6-alpha.13.22.a",
             "javaVersion": 8
         },
         {
             "id": "13w23a",
             "type": "SNAPSHOT",
-            "normalized": "1.6.1-alpha.13.23.a",
+            "normalized": "1.6-alpha.13.23.a",
             "javaVersion": 8
         },
         {
             "id": "13w23b",
             "type": "SNAPSHOT",
-            "normalized": "1.6.1-alpha.13.23.b",
+            "normalized": "1.6-alpha.13.23.b",
             "javaVersion": 8
         },
         {
             "id": "13w24a",
             "type": "SNAPSHOT",
-            "normalized": "1.6.1-alpha.13.24.a",
+            "normalized": "1.6-alpha.13.24.a",
             "javaVersion": 8
         },
         {
             "id": "13w24b",
             "type": "SNAPSHOT",
-            "normalized": "1.6.1-alpha.13.24.b",
+            "normalized": "1.6-alpha.13.24.b",
             "javaVersion": 8
         },
         {
             "id": "13w25a",
             "type": "SNAPSHOT",
-            "normalized": "1.6.1-alpha.13.25.a",
+            "normalized": "1.6-alpha.13.25.a",
             "javaVersion": 8
         },
         {
             "id": "13w25b",
             "type": "SNAPSHOT",
-            "normalized": "1.6.1-alpha.13.25.b",
+            "normalized": "1.6-alpha.13.25.b",
             "javaVersion": 8
         },
         {
             "id": "13w25c",
             "type": "SNAPSHOT",
-            "normalized": "1.6.1-alpha.13.25.c",
+            "normalized": "1.6-alpha.13.25.c",
             "javaVersion": 8
         },
         {
             "id": "13w26a",
             "type": "SNAPSHOT",
-            "normalized": "1.6.1-alpha.13.26.a",
+            "normalized": "1.6-alpha.13.26.a",
             "javaVersion": 8
         },
         {
@@ -742,25 +742,25 @@
         {
             "id": "13w36a",
             "type": "SNAPSHOT",
-            "normalized": "1.7.2-alpha.13.36.a",
+            "normalized": "1.7-alpha.13.36.a",
             "javaVersion": 8
         },
         {
             "id": "13w36b",
             "type": "SNAPSHOT",
-            "normalized": "1.7.2-alpha.13.36.b",
+            "normalized": "1.7-alpha.13.36.b",
             "javaVersion": 8
         },
         {
             "id": "13w37a",
             "type": "SNAPSHOT",
-            "normalized": "1.7.2-alpha.13.37.a",
+            "normalized": "1.7-alpha.13.37.a",
             "javaVersion": 8
         },
         {
             "id": "13w37b",
             "type": "SNAPSHOT",
-            "normalized": "1.7.2-alpha.13.37.b",
+            "normalized": "1.7-alpha.13.37.b",
             "javaVersion": 8
         },
         {
@@ -778,61 +778,61 @@
         {
             "id": "13w38a",
             "type": "SNAPSHOT",
-            "normalized": "1.7.2-alpha.13.38.a",
+            "normalized": "1.7-alpha.13.38.a",
             "javaVersion": 8
         },
         {
             "id": "13w38b",
             "type": "SNAPSHOT",
-            "normalized": "1.7.2-alpha.13.38.b",
+            "normalized": "1.7-alpha.13.38.b",
             "javaVersion": 8
         },
         {
             "id": "13w38c",
             "type": "SNAPSHOT",
-            "normalized": "1.7.2-alpha.13.38.c",
+            "normalized": "1.7-alpha.13.38.c",
             "javaVersion": 8
         },
         {
             "id": "13w39a",
             "type": "SNAPSHOT",
-            "normalized": "1.7.2-alpha.13.39.a",
+            "normalized": "1.7-alpha.13.39.a",
             "javaVersion": 8
         },
         {
             "id": "13w39b",
             "type": "SNAPSHOT",
-            "normalized": "1.7.2-alpha.13.39.b",
+            "normalized": "1.7-alpha.13.39.b",
             "javaVersion": 8
         },
         {
             "id": "13w41a",
             "type": "SNAPSHOT",
-            "normalized": "1.7.2-alpha.13.41.a",
+            "normalized": "1.7-alpha.13.41.a",
             "javaVersion": 8
         },
         {
             "id": "13w41b",
             "type": "SNAPSHOT",
-            "normalized": "1.7.2-alpha.13.41.b",
+            "normalized": "1.7-alpha.13.41.b",
             "javaVersion": 8
         },
         {
             "id": "13w42a",
             "type": "SNAPSHOT",
-            "normalized": "1.7.2-alpha.13.42.a",
+            "normalized": "1.7-alpha.13.42.a",
             "javaVersion": 8
         },
         {
             "id": "13w42b",
             "type": "SNAPSHOT",
-            "normalized": "1.7.2-alpha.13.42.b",
+            "normalized": "1.7-alpha.13.42.b",
             "javaVersion": 8
         },
         {
             "id": "13w43a",
             "type": "SNAPSHOT",
-            "normalized": "1.7.2-alpha.13.43.a",
+            "normalized": "1.7-alpha.13.43.a",
             "javaVersion": 8
         },
         {
@@ -856,49 +856,49 @@
         {
             "id": "13w47a",
             "type": "SNAPSHOT",
-            "normalized": "1.7.4-alpha.13.47.a",
+            "normalized": "1.7.3-alpha.13.47.a",
             "javaVersion": 8
         },
         {
             "id": "13w47b",
             "type": "SNAPSHOT",
-            "normalized": "1.7.4-alpha.13.47.b",
+            "normalized": "1.7.3-alpha.13.47.b",
             "javaVersion": 8
         },
         {
             "id": "13w47c",
             "type": "SNAPSHOT",
-            "normalized": "1.7.4-alpha.13.47.c",
+            "normalized": "1.7.3-alpha.13.47.c",
             "javaVersion": 8
         },
         {
             "id": "13w47d",
             "type": "SNAPSHOT",
-            "normalized": "1.7.4-alpha.13.47.d",
+            "normalized": "1.7.3-alpha.13.47.d",
             "javaVersion": 8
         },
         {
             "id": "13w47e",
             "type": "SNAPSHOT",
-            "normalized": "1.7.4-alpha.13.47.e",
+            "normalized": "1.7.3-alpha.13.47.e",
             "javaVersion": 8
         },
         {
             "id": "13w48a",
             "type": "SNAPSHOT",
-            "normalized": "1.7.4-alpha.13.48.a",
+            "normalized": "1.7.3-alpha.13.48.a",
             "javaVersion": 8
         },
         {
             "id": "13w48b",
             "type": "SNAPSHOT",
-            "normalized": "1.7.4-alpha.13.48.b",
+            "normalized": "1.7.3-alpha.13.48.b",
             "javaVersion": 8
         },
         {
             "id": "13w49a",
             "type": "SNAPSHOT",
-            "normalized": "1.7.4-alpha.13.49.a",
+            "normalized": "1.7.3-alpha.13.49.a",
             "javaVersion": 8
         },
         {
@@ -3868,7 +3868,7 @@
         {
             "id": "22w13oneblockatatime",
             "type": "SNAPSHOT",
-            "normalized": "1.19-22.w.13.oneBlockAtATime",
+            "normalized": "1.18.3-alpha.22.13.oneblockatatime",
             "javaVersion": 17
         },
         {
@@ -5084,8 +5084,8 @@
             "javaVersion": 21
         },
         {
-            "id": "25w32a",
             "type": "SNAPSHOT",
+            "id": "25w32a",
             "normalized": "1.21.9-alpha.25.32.a",
             "javaVersion": 21
         }
