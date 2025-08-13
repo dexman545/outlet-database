@@ -5090,8 +5090,8 @@
             "javaVersion": 21
         },
         {
-            "type": "SNAPSHOT",
             "id": "25w33a",
+            "type": "SNAPSHOT",
             "normalized": "1.21.9-alpha.25.33.a",
             "javaVersion": 21
         }
