@@ -5162,8 +5162,8 @@
             "javaVersion": 21
         },
         {
-            "type": "RELEASE",
             "id": "1.21.9",
+            "type": "RELEASE",
             "normalized": "1.21.9",
             "javaVersion": 21
         }
