@@ -1,5 +1,5 @@
 {
-    "lastChanged": "2025-11-19T15:16:56+0000",
+    "lastChanged": "2025-11-25T15:17:38+0000",
     "versions": [
         {
             "id": "rd-132211",
@@ -5219,6 +5219,12 @@
             "id": "1.21.11-pre1",
             "type": "SNAPSHOT",
             "normalized": "1.21.11-beta.1",
+            "javaVersion": 21
+        },
+        {
+            "type": "SNAPSHOT",
+            "id": "1.21.11-pre2",
+            "normalized": "1.21.11-beta.2",
             "javaVersion": 21
         }
     ]
