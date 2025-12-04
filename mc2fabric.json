@@ -5240,8 +5240,8 @@
             "javaVersion": 21
         },
         {
-            "type": "SNAPSHOT",
             "id": "1.21.11-pre5",
+            "type": "SNAPSHOT",
             "normalized": "1.21.11-beta.5",
             "javaVersion": 21
         }
