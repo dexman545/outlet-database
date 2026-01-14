@@ -5282,8 +5282,8 @@
             "javaVersion": 25
         },
         {
-            "type": "SNAPSHOT",
             "id": "26.1-snapshot-3",
+            "type": "SNAPSHOT",
             "normalized": "26.1-alpha.3",
             "javaVersion": 25
         }
