@@ -5312,14 +5312,14 @@
             "javaVersion": 25
         },
         {
-            "type": "SNAPSHOT",
             "id": "26.1-snapshot-8",
+            "type": "SNAPSHOT",
             "normalized": "26.1-alpha.8",
             "javaVersion": 25
         },
         {
-            "type": "SNAPSHOT",
             "id": "26.1-snapshot-9",
+            "type": "SNAPSHOT",
             "normalized": "26.1-alpha.9",
             "javaVersion": 25
         }
