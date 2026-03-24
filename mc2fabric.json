@@ -5360,14 +5360,14 @@
             "javaVersion": 25
         },
         {
-            "type": "SNAPSHOT",
             "id": "26.1-rc-2",
+            "type": "SNAPSHOT",
             "normalized": "26.1-rc.2",
             "javaVersion": 25
         },
         {
-            "type": "SNAPSHOT",
             "id": "26.1-rc-3",
+            "type": "SNAPSHOT",
             "normalized": "26.1-rc.3",
             "javaVersion": 25
         }
