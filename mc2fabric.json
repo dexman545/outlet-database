@@ -5450,8 +5450,8 @@
             "javaVersion": 25
         },
         {
-            "type": "SNAPSHOT",
             "id": "26.2-snapshot-8",
+            "type": "SNAPSHOT",
             "normalized": "26.2-alpha.8",
             "javaVersion": 25
         }
