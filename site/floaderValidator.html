@@ -23,6 +23,31 @@
             color: #aaa;
             font-size: 0.9rem;
         }
+        #mode-selector {
+            margin-bottom: 1rem;
+        }
+        .mode-option {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            margin-right: 1.2rem;
+            color: #aaa;
+            font-size: 0.9rem;
+            cursor: pointer;
+        }
+        .mode-option input {
+            accent-color: #a0c0ff;
+        }
+        #warn {
+            color: #ff6b6b;
+            font-size: 0.85rem;
+            margin-top: 0.4rem;
+        }
+        #predicate-panel,
+        #modrinth-panel,
+        #custom-panel {
+            margin-bottom: 0.5rem;
+        }
         .predicate-input {
             display: block;
             width: 100%;
@@ -40,7 +65,7 @@
         .predicate-input:focus {
             border-color: #a0c0ff;
         }
-        #copy-url-btn {
+        .action-btn {
             margin-top: 0.5rem;
             padding: 0.35rem 0.75rem;
             font-family: monospace;
@@ -51,7 +76,7 @@
             border-radius: 4px;
             cursor: pointer;
         }
-        #copy-url-btn:hover {
+        .action-btn:hover {
             border-color: #a0c0ff;
         }
         #error-message {
@@ -73,8 +98,7 @@
         }
         #version-list li {
             display: flex;
-            justify-content: space-between;
-            align-items: baseline;
+            align-items: center;
             padding: 0.3rem 0.4rem;
             border-bottom: 1px solid #2a2a2a;
         }
@@ -83,19 +107,57 @@
         }
         .mc-name {
             color: #e0e0e0;
+            flex: 1 1 auto; /* left column grows */
         }
         .semver {
             color: #80c8a0;
             font-size: 0.85rem;
+            flex: 0 0 8rem; /* fixed column for semver so it's centered */
+            text-align: center;
+        }
+        .match-yes, .match-no, .match-empty {
+            width: 6.5rem; /* fixed width column for match status */
+            text-align: right;
+            font-size: 0.85rem;
             margin-left: 1rem;
+            display: inline-block;
+        }
+        .match-yes {
+            color: #80c8a0;
+        }
+        .match-no {
+            color: #ff6b6b;
         }
     </style>
 </head>
 <body>
     <h1>Fabric Loader Version Validator</h1>
-    <label>Version Constraint Predicates:</label>
-    <div id="predicate-inputs"></div>
-    <button id="copy-url-btn">Copy URL</button>
+
+    <div id="mode-selector">
+        <label class="mode-option"><input type="radio" name="mode" id="mode-minecraft" checked> Minecraft</label>
+        <label class="mode-option"><input type="radio" name="mode" id="mode-modrinth"> Modrinth</label>
+        <label class="mode-option"><input type="radio" name="mode" id="mode-custom"> Custom</label>
+    </div>
+
+    <div id="modrinth-panel" style="display:none">
+        <label>Modrinth Mod ID / Slug:</label>
+        <input type="text" id="modrinth-slug-input" class="predicate-input" placeholder="e.g. autoswitch" autocomplete="off" spellcheck="false">
+        <button id="modrinth-fetch-btn" class="action-btn">Fetch Versions</button>
+        <div id="warn">This pulls the version numbers from Modrinth, which may not be the version number in the mod's
+            fabric.mod.json. If that is the case, you will need to use the Custom mode and enter the versions manually.</div>
+    </div>
+
+    <div id="predicate-panel">
+        <label>Version Constraint Predicates:</label>
+        <div id="predicate-inputs"></div>
+        <button id="copy-url-btn" class="action-btn">Copy URL</button>
+    </div>
+
+    <div id="custom-panel" style="display:none">
+        <label>Custom Versions:</label>
+        <div id="custom-version-inputs"></div>
+    </div>
+
     <div id="error-message"></div>
     <div id="match-count"></div>
     <ul id="version-list"></ul>
