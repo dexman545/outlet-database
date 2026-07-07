@@ -1,5 +1,9 @@
+import org.teavm.gradle.api.JSModuleType
+
 plugins {
     id 'groovy'
+    id 'java'
+    id "org.teavm" version "0.15.0"
 }
 
 group = 'dex.outlet.database'
@@ -34,6 +38,25 @@ dependencies {
     implementation 'org.codehaus.groovy:groovy-all:3.0.13'
 
     implementation 'org.jsoup:jsoup:1.15.3'
+
+    teavm(teavm.libs.jsoApis)
+}
+
+teavm {
+    all {
+        mainClass = "io.github.dexman545.outlet.RangeChecker"
+    }
+    js {
+        addedToWebApp = true
+        targetFileName = "range.js"
+        outputDir = file('site')
+        moduleType = JSModuleType.NONE
+    }
+}
+
+tasks.register('buildSite') {
+    dependsOn 'generateJavaScript'
+    description = 'Compiles Java to JS via TeaVM and outputs range.js to site/'
 }
 
 test {
