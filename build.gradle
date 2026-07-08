@@ -51,6 +51,8 @@ teavm {
         targetFileName = "range.js"
         outputDir = file('site')
         moduleType = JSModuleType.NONE
+        //sourceMap = true
+        //obfuscated = false
     }
 }
 

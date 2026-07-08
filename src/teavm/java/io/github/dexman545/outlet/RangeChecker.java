@@ -1,5 +1,7 @@
 package io.github.dexman545.outlet;
 
+import java.io.PrintWriter;
+import java.io.StringWriter;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
@@ -15,6 +17,7 @@ import org.teavm.jso.dom.html.HTMLDocument;
 import org.teavm.jso.dom.html.HTMLElement;
 import org.teavm.jso.dom.html.HTMLInputElement;
 
+import net.fabricmc.loader.api.SemanticVersion;
 import net.fabricmc.loader.api.Version;
 import net.fabricmc.loader.api.VersionParsingException;
 import net.fabricmc.loader.api.metadata.version.VersionPredicate;
@@ -344,6 +347,14 @@ public class RangeChecker {
         } catch (VersionParsingException ex) {
             errorEl.getStyle().setProperty("display", "block");
             errorEl.setInnerHTML(escapeHtml("Invalid predicate: " + ex.getMessage()));
+        } catch (AssertionError ex) {
+            var sw = new StringWriter();
+            var pw = new PrintWriter(sw);
+            ex.printStackTrace(pw);
+
+            errorEl.getStyle().setProperty("display", "block");
+            errorEl.setInnerHTML(escapeHtml("Predicate violates one or more assertions. " +
+                    "The predicate may work in production, but cannot be evaluated here: " + sw));
         }
     }
 
@@ -379,6 +390,14 @@ public class RangeChecker {
         } catch (VersionParsingException ex) {
             errorEl.getStyle().setProperty("display", "block");
             errorEl.setInnerHTML(escapeHtml("Invalid predicate: " + ex.getMessage()));
+        } catch (AssertionError ex) {
+            var sw = new StringWriter();
+            var pw = new PrintWriter(sw);
+            ex.printStackTrace(pw);
+
+            errorEl.getStyle().setProperty("display", "block");
+            errorEl.setInnerHTML(escapeHtml("Predicate violates one or more assertions. " +
+                    "The predicate may work in production, but cannot be evaluated here: " + sw));
         }
     }
 
@@ -400,6 +419,14 @@ public class RangeChecker {
                 errorEl.getStyle().setProperty("display", "block");
                 errorEl.setInnerHTML(escapeHtml("Invalid predicate: " + ex.getMessage()));
                 return;
+            } catch (AssertionError ex) {
+                var sw = new StringWriter();
+                var pw = new PrintWriter(sw);
+                ex.printStackTrace(pw);
+
+                errorEl.getStyle().setProperty("display", "block");
+                errorEl.setInnerHTML(escapeHtml("Predicate violates one or more assertions. " +
+                        "The predicate may work in production, but cannot be evaluated here: " + sw));
             }
         } else {
             errorEl.getStyle().setProperty("display", "none");
