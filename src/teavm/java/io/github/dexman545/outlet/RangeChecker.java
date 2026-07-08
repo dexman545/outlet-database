@@ -2,8 +2,11 @@ package io.github.dexman545.outlet;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Objects;
+
 import org.teavm.jso.JSBody;
 import org.teavm.jso.JSObject;
 import org.teavm.jso.ajax.XMLHttpRequest;
@@ -402,28 +405,33 @@ public class RangeChecker {
             errorEl.getStyle().setProperty("display", "none");
         }
 
-        List<McEntry> entries = new ArrayList<>();
         List<Boolean> matches = new ArrayList<>();
-        for (var input : customVersionInputs) {
+        var entries = customVersionInputs.stream().filter(input -> {
             String v = input.getValue();
-            if (v == null || v.isBlank()) continue;
+            return v != null && !v.isBlank();
+        }).map(input -> {
+            String v = input.getValue();
             try {
                 Version parsed = Version.parse(v);
-                entries.add(new McEntry(v, parsed));
-                if (predicates != null) {
-                    boolean isMatch = false;
-                    for (var predicate : predicates) {
-                        if (predicate.test(parsed)) {
-                            isMatch = true;
-                            break;
-                        }
-                    }
-                    matches.add(isMatch);
-                } else {
-                    matches.add(null);
-                }
+                return new McEntry(v, parsed);
             } catch (VersionParsingException ignored) {
                 // skip entries that don't parse as a version yet (still being typed)
+                return null;
+            }
+        }).filter(Objects::nonNull).sorted(Collections.reverseOrder()).toList();
+
+        for (var entry : entries) {
+            if (predicates != null) {
+                boolean isMatch = false;
+                for (var predicate : predicates) {
+                    if (predicate.test(entry.semver())) {
+                        isMatch = true;
+                        break;
+                    }
+                }
+                matches.add(isMatch);
+            } else {
+                matches.add(null);
             }
         }
 
