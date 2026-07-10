@@ -94,6 +94,19 @@ public class RangeChecker {
             copyBtn.setInnerHTML("Copied!");
             resetAfterDelay(copyBtn, "Copy URL", 2000);
         });
+
+        var copyJsonButton = document.getElementById("copy-json-btn");
+        copyJsonButton.addEventListener("click", e -> {
+            var s = buildJsonSnippet();
+            if (s == null || s.isBlank()) {
+                copyJsonButton.setInnerHTML("Nothing to copy!");
+                resetAfterDelay(copyJsonButton, "Copy JSON Snippet", 2000);
+                return;
+            }
+            copyToClipboard(s);
+            copyJsonButton.setInnerHTML("Copied!");
+            resetAfterDelay(copyJsonButton, "Copy JSON Snippet", 2000);
+        });
     }
 
     private static void setupModeRadios(HTMLDocument document, HTMLElement errorEl, HTMLElement countEl) {
@@ -220,6 +233,52 @@ public class RangeChecker {
             }
         }
         return null;
+    }
+
+    private static String buildJsonSnippet() {
+        List<String> ranges = new ArrayList<>();
+
+        for (var input : inputs) {
+            String v = input.getValue();
+            if (v != null && !v.isBlank()) {
+                ranges.add(v);
+            }
+        }
+
+        if (ranges.isEmpty()) {
+            return null;
+        }
+
+        var name = switch (currentMode) {
+            case MINECRAFT -> "minecraft";
+            case MODRINTH -> {
+                var document = HTMLDocument.current();
+                var slugInput = (HTMLInputElement) document.getElementById("modrinth-slug-input");
+                String slug = slugInput.getValue();
+                if (slug != null && !slug.isBlank()) {
+                    yield slug.trim();
+                }
+                yield "modrinth";
+            }
+            case CUSTOM -> "custom";
+        };
+
+        if (ranges.size() == 1) {
+            return "\"%s\": \"%s\"".formatted(name, ranges.get(0));
+        }
+
+        var sb = new StringBuilder("\"%s\": [".formatted(name));
+        var fst = true;
+        for (String range : ranges) {
+            if (!fst) {
+                sb.append(",");
+            }
+            sb.append("\n\t").append('"').append(range).append('"');
+            fst = false;
+        }
+        sb.append("\n]");
+
+        return sb.toString();
     }
 
     private static String buildShareUrl() {
