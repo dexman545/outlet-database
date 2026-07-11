@@ -20,7 +20,9 @@ import org.teavm.jso.dom.html.HTMLInputElement;
 import net.fabricmc.loader.api.SemanticVersion;
 import net.fabricmc.loader.api.Version;
 import net.fabricmc.loader.api.VersionParsingException;
+import net.fabricmc.loader.api.metadata.version.VersionInterval;
 import net.fabricmc.loader.api.metadata.version.VersionPredicate;
+import net.fabricmc.loader.impl.util.version.StringVersion;
 
 public class RangeChecker {
     private static List<McEntry> allVersions = new ArrayList<>();
@@ -72,15 +74,16 @@ public class RangeChecker {
 
         List<String> params = readPredicateParams();
         for (String param : params) {
-            addInputBox(document, predicateContainer, inputs, () -> refresh(errorEl, countEl), "e.g. >=1.20.0 <1.21");
+            addInputBox(document, predicateContainer, inputs, () -> refresh(errorEl, countEl), "e.g. >=1.20.0 <1.21", true);
             inputs.get(inputs.size() - 1).setValue(param);
+            decorateInput(true, param, inputs.get(inputs.size() - 1));
         }
         if (!params.isEmpty()) {
             filterVersions(errorEl, countEl);
         }
-        addInputBox(document, predicateContainer, inputs, () -> refresh(errorEl, countEl), "e.g. >=1.20.0 <1.21");
+        addInputBox(document, predicateContainer, inputs, () -> refresh(errorEl, countEl), "e.g. >=1.20.0 <1.21", true);
 
-        addInputBox(document, customContainer, customVersionInputs, () -> refresh(errorEl, countEl), "e.g. 1.20.1");
+        addInputBox(document, customContainer, customVersionInputs, () -> refresh(errorEl, countEl), "e.g. 1.20.1", false);
 
         setupModeRadios(document, errorEl, countEl);
         setupModrinthPanel(document, errorEl, countEl);
@@ -329,7 +332,7 @@ public class RangeChecker {
      * non-blank value, a new empty input is appended. Blurring an empty, non-last input removes it.
      */
     private static void addInputBox(HTMLDocument document, HTMLElement container, List<HTMLInputElement> list,
-                                     Runnable onChange, String placeholder) {
+                                     Runnable onChange, String placeholder, boolean isPredicate) {
         var input = (HTMLInputElement) document.createElement("input");
         input.setAttribute("type", "text");
         input.setAttribute("class", "predicate-input");
@@ -342,15 +345,17 @@ public class RangeChecker {
         container.appendChild(input);
 
         input.addEventListener("input", e -> {
+            input.setClassName("predicate-input");
             String lastValue = list.get(list.size() - 1).getValue();
             if (lastValue != null && !lastValue.isBlank()) {
-                addInputBox(document, container, list, onChange, placeholder);
+                addInputBox(document, container, list, onChange, placeholder, isPredicate);
             }
             onChange.run();
         });
 
         input.addEventListener("blur", e -> {
             String value = input.getValue();
+            decorateInput(isPredicate, value, input);
             if (value != null && !value.isBlank()) return;
             String myId = input.getAttribute("data-pi-id");
             String lastId = list.get(list.size() - 1).getAttribute("data-pi-id");
@@ -364,6 +369,47 @@ public class RangeChecker {
                 }
             }
         });
+    }
+
+    private static void decorateInput(boolean isPredicate, String value, HTMLInputElement input) {
+        if (isPredicate && value != null && !value.isBlank()) {
+            VersionPredicate predicate;
+            try {
+                predicate = VersionPredicate.parse(value);
+            } catch (Exception ex) {
+                input.setTitle("Invalid version predicate: " + ex.getMessage());
+                input.setClassName("predicate-input p-error");
+                return;
+            } catch (AssertionError ex) {
+                input.setTitle("Predicate violates one or more assertions. The predicate may work in production, but cannot be evaluated here");
+                input.setClassName("predicate-input p-error");
+                return;
+            }
+
+            var infinite = predicate.getInterval() == VersionInterval.INFINITE;
+            if (infinite) {
+                input.setTitle("Infinite version predicate, matches all versions");
+                return;
+            }
+
+            var interval = predicate.getInterval();
+            if (interval != null) {
+                var semantic = interval.isSemantic();
+
+                if (!semantic) {
+                    input.setClassName("predicate-input p-string");
+                    input.setTitle("This is not a semantic version range, and may be treated as a string with limited range operator support");
+                    return;
+                }
+
+                input.setClassName("predicate-input");
+                input.setTitle("A semantic range equivalent to " + predicate.toString() + " matching an interval of " + interval.toString());
+            } else {
+                input.setClassName("predicate-input p-error");
+                input.setTitle("Unable to create a version interval for predicate '" + predicate + "'. " +
+                        "It is likely the predicate contains 1 or more ranges that when ANDed together failed to create a valid interval.");
+            }
+        }
     }
 
     private static void refresh(HTMLElement errorEl, HTMLElement countEl) {
@@ -534,6 +580,7 @@ public class RangeChecker {
         list.setInnerHTML("");
         for (int i = 0; i < versions.size(); i++) {
             var entry = versions.get(i);
+            var isStringVersion = entry.semver instanceof StringVersion;
             var item = document.createElement("li");
             String matchHtml = "";
             if (matches != null) {
@@ -546,17 +593,25 @@ public class RangeChecker {
                             : "<span class=\"match-no\">&#10007; no match</span>";
                 }
             }
-            item.setInnerHTML(
-                    "<span class=\"mc-name\">" + escapeHtml(entry.name()) + "</span>" +
-                    "<span class=\"semver\">" + escapeHtml(entry.semver().getFriendlyString()) + "</span>" +
-                    matchHtml
-            );
+            item.appendChild(document.createElement("span", e -> {
+                e.setClassName("mc-name");
+                e.setInnerText(escapeHtml(entry.name()));
+            }));
+            item.appendChild(document.createElement("span", e -> {
+                e.setClassName(isStringVersion ? "string-ver" : "semver");
+                e.setInnerText(escapeHtml(entry.semver().getFriendlyString()));
+                if (isStringVersion) {
+                    e.setTitle("""
+                            This is a string version which has limited support for range operators.
+                            """);
+                }
+            }));
             list.appendChild(item);
         }
         if (total >= 0) {
-            countEl.setInnerHTML(versions.size() + " / " + total + " versions");
+            countEl.setInnerHTML(versions.size() + " / " + total + " versions (sorted)");
         } else {
-            countEl.setInnerHTML(versions.size() + " versions");
+            countEl.setInnerHTML(versions.size() + " versions (sorted)");
         }
     }
 
@@ -640,7 +695,7 @@ public class RangeChecker {
         var customContainer = document.getElementById("custom-version-inputs");
         List<String> custom = readCustomParams();
         for (String param : custom) {
-            addInputBox(document, customContainer, customVersionInputs, () -> refresh(errorEl, countEl), "e.g. 1.20.1");
+            addInputBox(document, customContainer, customVersionInputs, () -> refresh(errorEl, countEl), "e.g. 1.20.1", false);
             customVersionInputs.get(customVersionInputs.size() - 1).setValue(param);
         }
 
