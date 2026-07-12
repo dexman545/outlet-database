@@ -23,6 +23,28 @@
             color: #aaa;
             font-size: 0.9rem;
         }
+        details {
+            border: 1px solid #aaa;
+            border-radius: 4px;
+            padding: 0.5em 0.5em 0;
+            margin-bottom: 10px;
+            font-family: sans-serif;
+        }
+        summary {
+            font-weight: bold;
+            margin: -0.5em -0.5em 0;
+            padding: 0.5em;
+            cursor: pointer;
+            background-color: rgb(83 189 204 / 0.43);
+            user-select: none;
+        }
+        details[open] {
+            padding: 0.5em;
+        }
+        details[open] summary {
+            border-bottom: 1px solid #aaa;
+            margin-bottom: 10px;
+        }
         #mode-selector {
             margin-bottom: 1rem;
         }
@@ -168,7 +190,10 @@
 
     <div id="custom-panel" style="display:none">
         <label>Custom Versions:</label>
-        <div id="custom-version-inputs"></div>
+        <details open>
+            <summary>Enter custom versions here</summary>
+            <div id="custom-version-inputs"></div>
+        </details>
     </div>
 
     <div id="error-message"></div>
