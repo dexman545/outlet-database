@@ -347,6 +347,7 @@ public class RangeChecker {
         input.addEventListener("input", e -> {
             input.setClassName("predicate-input");
             String lastValue = list.get(list.size() - 1).getValue();
+            decorateInput(isPredicate, input.getValue(), input);
             if (lastValue != null && !lastValue.isBlank()) {
                 addInputBox(document, container, list, onChange, placeholder, isPredicate);
             }
