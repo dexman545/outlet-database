@@ -582,30 +582,35 @@ public class RangeChecker {
             var entry = versions.get(i);
             var isStringVersion = entry.semver instanceof StringVersion;
             var item = document.createElement("li");
-            String matchHtml = "";
-            if (matches != null) {
-                Boolean m = matches.get(i);
-                if (m == null) {
-                    matchHtml = "<span class=\"match-empty\"></span>";
-                } else {
-                    matchHtml = m
-                            ? "<span class=\"match-yes\">&#10003; match</span>"
-                            : "<span class=\"match-no\">&#10007; no match</span>";
-                }
-            }
             item.appendChild(document.createElement("span", e -> {
                 e.setClassName("mc-name");
-                e.setInnerText(escapeHtml(entry.name()));
+                e.setInnerText(entry.name());
             }));
+
             item.appendChild(document.createElement("span", e -> {
                 e.setClassName(isStringVersion ? "string-ver" : "semver");
-                e.setInnerText(escapeHtml(entry.semver().getFriendlyString()));
+                e.setInnerText(entry.semver().getFriendlyString());
                 if (isStringVersion) {
                     e.setTitle("""
                             This is a string version which has limited support for range operators.
                             """);
                 }
             }));
+
+            if (matches != null) {
+                Boolean m = matches.get(i);
+                item.appendChild(document.createElement("span", e -> {
+                    if (m == null) {
+                        e.setClassName("match-empty");
+                    } else if (m) {
+                        e.setClassName("match-yes");
+                        e.setInnerText("✓ match");
+                    } else {
+                        e.setClassName("match-no");
+                        e.setInnerText("✗ no match");
+                    }
+                }));
+            }
             list.appendChild(item);
         }
         if (total >= 0) {
