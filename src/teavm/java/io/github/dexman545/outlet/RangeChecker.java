@@ -403,8 +403,16 @@ public class RangeChecker {
                     return;
                 }
 
-                input.setClassName("predicate-input");
-                input.setTitle("A semantic range equivalent to " + predicate.toString() + " matching an interval of " + interval.toString());
+                // .x versions with more than 3 components
+                if (value.matches("(\\d+\\.){2,}(\\d+)\\.[x*X]")) {
+                    input.setClassName("predicate-input p-warning");
+                    input.setTitle("This is a wildcard range containing more than 3 components," +
+                            " which only began to work properly in Fabric Loader 0.19.4. See issue #1156\n" +
+                            "A semantic range equivalent to " + predicate.toString() + " matching an interval of " + interval.toString());
+                } else {
+                    input.setClassName("predicate-input");
+                    input.setTitle("A semantic range equivalent to " + predicate.toString() + " matching an interval of " + interval.toString());
+                }
             } else {
                 input.setClassName("predicate-input p-error");
                 input.setTitle("Unable to create a version interval for predicate '" + predicate + "'. " +
