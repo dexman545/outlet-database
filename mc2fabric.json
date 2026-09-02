@@ -5570,8 +5570,8 @@
             "javaVersion": 25
         },
         {
-            "type": "SNAPSHOT",
             "id": "26.3-pre-1",
+            "type": "SNAPSHOT",
             "normalized": "26.3-pre.1",
             "javaVersion": 25
         }
