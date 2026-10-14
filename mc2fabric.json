@@ -5630,8 +5630,8 @@
             "javaVersion": 25
         },
         {
-            "type": "SNAPSHOT",
             "id": "26.4-snapshot-4",
+            "type": "SNAPSHOT",
             "normalized": "26.4-alpha.4",
             "javaVersion": 25
         }
